@@ -170,21 +170,20 @@
       </div>
 
       <!-- Hero visual: browser + phone mockup.
-           Local images: images/hero-desktop.jpg (1440×900) and images/hero-mobile.jpg (390×844) -->
+           Currently an illustration. To use a real screenshot, add images/hero-desktop.jpg (1440×900)
+           and images/hero-mobile.jpg (390×844) and change the two src values below. -->
       <div class="hero__visual">
         <div class="mock-browser">
           <div class="mock-browser__bar" aria-hidden="true">
             <span></span><span></span><span></span>
             <div class="mock-browser__url">yourbrand.com</div>
           </div>
-          <img src="images/hero-desktop.jpg"
-               data-fallback="https://placehold.co/1440x900/EFE6DA/7A6A5D?text=Your+Store+Screenshot"
+          <img src="images/hero-desktop.svg"
                width="1440" height="900" fetchpriority="high" decoding="async"
                alt="Desktop homepage of a redesigned skincare Shopify store">
         </div>
         <div class="mock-phone">
-          <img src="images/hero-mobile.jpg"
-               data-fallback="https://placehold.co/390x844/F4ECE2/7A6A5D?text=Mobile"
+          <img src="images/hero-mobile.svg"
                width="390" height="844" loading="lazy" decoding="async"
                alt="The same store on a mobile phone">
         </div>
@@ -198,7 +197,7 @@
        Image files (desktop 1440×900, mobile 390×844):
          images/<name>-before.jpg         images/<name>-after.jpg
          images/<name>-before-mobile.jpg  images/<name>-after-mobile.jpg
-       Until you add them, the "data-fallback" placeholder is shown.
+       Until you add them, a "Screenshot coming soon" placeholder is shown.
        ============================================================ -->
   <section class="section work" id="work" aria-labelledby="work-title">
     <div class="container">
@@ -209,8 +208,27 @@
       </header>
 
       <!-- ---------- PROJECT A: Jenny Joy's Soap ---------- -->
-      <article class="project reveal" aria-labelledby="p-jj-title">
+      <article class="project project--wide reveal" aria-labelledby="p-jj-title">
         <div class="project__media">
+          <p class="project__view-label">Email signup section</p>
+          <div class="ba ba--strip" data-ba>
+            <img class="ba__img" src="images/jennyjoy-email-before.jpg"
+                 width="1440" height="351" loading="lazy" decoding="async"
+                 alt="Jenny Joy's Soap email signup before: a plain default 'Subscribe to our emails' box">
+            <img class="ba__img ba__img--after" src="images/jennyjoy-email-after.jpg"
+                 width="1440" height="351" loading="lazy" decoding="async"
+                 alt="Jenny Joy's Soap email signup after: a branded green section titled 'Stay inspired. Stay connected.'">
+            <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
+            <span class="ba__label ba__label--after" aria-hidden="true">After</span>
+            <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Jenny Joy's Soap email signup section" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
+            </div>
+          </div>
+
+          <!-- LATER: homepage Desktop/Mobile comparisons for Jenny Joy's Soap.
+               When you have the 4 screenshots, move everything inside <template> up here
+               (above the email signup slider) and delete the <template> tags. -->
+          <template>
           <div class="view-toggle" role="tablist" aria-label="Screenshot view for Jenny Joy's Soap">
             <button type="button" role="tab" id="jj-tab-desktop" aria-controls="jj-panel-desktop" aria-selected="true">Desktop</button>
             <button type="button" role="tab" id="jj-tab-mobile" aria-controls="jj-panel-mobile" aria-selected="false" tabindex="-1">Mobile</button>
@@ -218,14 +236,12 @@
 
           <div class="view-panel" id="jj-panel-desktop" role="tabpanel" aria-labelledby="jj-tab-desktop">
             <div class="ba" data-ba>
-              <!-- Local: images/jennyjoy-before.jpg -->
               <img class="ba__img" src="images/jennyjoy-before.jpg"
-                   data-fallback="https://placehold.co/1440x900/E4DCD2/6B5D52?text=Jenny+Joy+-+Before"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Jenny Joy's Soap homepage before the redesign">
-              <!-- Local: images/jennyjoy-after.jpg -->
               <img class="ba__img ba__img--after" src="images/jennyjoy-after.jpg"
-                   data-fallback="https://placehold.co/1440x900/F3E3D6/8A4127?text=Jenny+Joy+-+After"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Jenny Joy's Soap homepage after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -238,14 +254,12 @@
 
           <div class="view-panel view-panel--mobile" id="jj-panel-mobile" role="tabpanel" aria-labelledby="jj-tab-mobile" hidden>
             <div class="ba ba--mobile" data-ba>
-              <!-- Local: images/jennyjoy-before-mobile.jpg -->
               <img class="ba__img" src="images/jennyjoy-before-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/E4DCD2/6B5D52?text=Before"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Jenny Joy's Soap on mobile before the redesign">
-              <!-- Local: images/jennyjoy-after-mobile.jpg -->
               <img class="ba__img ba__img--after" src="images/jennyjoy-after-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/F3E3D6/8A4127?text=After"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Jenny Joy's Soap on mobile after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -255,6 +269,7 @@
               </div>
             </div>
           </div>
+          </template>
         </div>
 
         <div class="project__body">
@@ -275,10 +290,10 @@
             <div>
               <h4>What I changed</h4>
               <ul class="list list--check">
+                <li>Turned a default signup box into a branded "little joy in your inbox" section</li>
                 <li>Rebuilt the homepage around best-sellers and the brand story</li>
                 <li>Redesigned product pages with clear ingredients, benefits and reviews</li>
                 <li>Added trust cues near Add to Cart (shipping, returns, handmade promise)</li>
-                <li>Mobile-first layout with a sticky Add to Cart</li>
               </ul>
             </div>
           </div>
@@ -305,12 +320,12 @@
             <div class="ba" data-ba>
               <!-- Local: images/subtle-before.jpg -->
               <img class="ba__img" src="images/subtle-before.jpg"
-                   data-fallback="https://placehold.co/1440x900/E4DCD2/6B5D52?text=Subtle+Commerce+-+Before"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Subtle Commerce website before the redesign">
               <!-- Local: images/subtle-after.jpg -->
               <img class="ba__img ba__img--after" src="images/subtle-after.jpg"
-                   data-fallback="https://placehold.co/1440x900/F3E3D6/8A4127?text=Subtle+Commerce+-+After"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Subtle Commerce website after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -325,12 +340,12 @@
             <div class="ba ba--mobile" data-ba>
               <!-- Local: images/subtle-before-mobile.jpg -->
               <img class="ba__img" src="images/subtle-before-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/E4DCD2/6B5D52?text=Before"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Subtle Commerce on mobile before the redesign">
               <!-- Local: images/subtle-after-mobile.jpg -->
               <img class="ba__img ba__img--after" src="images/subtle-after-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/F3E3D6/8A4127?text=After"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Subtle Commerce on mobile after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -390,12 +405,12 @@
             <div class="ba" data-ba>
               <!-- Local: images/novie-before.jpg -->
               <img class="ba__img" src="images/novie-before.jpg"
-                   data-fallback="https://placehold.co/1440x900/E4DCD2/6B5D52?text=Novie+-+Before"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Novie skincare concept store, starting theme before customisation">
               <!-- Local: images/novie-after.jpg -->
               <img class="ba__img ba__img--after" src="images/novie-after.jpg"
-                   data-fallback="https://placehold.co/1440x900/F3E3D6/8A4127?text=Novie+-+After"
+                   data-fallback="images/placeholder-desktop.svg"
                    width="1440" height="900" loading="lazy" decoding="async"
                    alt="Novie skincare concept store after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -410,12 +425,12 @@
             <div class="ba ba--mobile" data-ba>
               <!-- Local: images/novie-before-mobile.jpg -->
               <img class="ba__img" src="images/novie-before-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/E4DCD2/6B5D52?text=Before"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Novie on mobile before the redesign">
               <!-- Local: images/novie-after-mobile.jpg -->
               <img class="ba__img ba__img--after" src="images/novie-after-mobile.jpg"
-                   data-fallback="https://placehold.co/390x844/F3E3D6/8A4127?text=After"
+                   data-fallback="images/placeholder-mobile.svg"
                    width="390" height="844" loading="lazy" decoding="async"
                    alt="Novie on mobile after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
@@ -501,7 +516,7 @@
         <article class="card service reveal">
           <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"></use></svg></span>
           <h3>Website CRO Audit</h3>
-          <p>A detailed review of what's costing your store sales, with a prioritised list of fixes.</p>
+          <p>A detailed review of what's costing your store sales, backed by my UXAuditor tool, with a prioritised list of fixes.</p>
           <ul class="list list--check">
             <li>Know exactly what to fix first</li>
             <li>Clear, plain-English recommendations</li>
@@ -530,6 +545,45 @@
             <li>A short walkthrough so you can run it with confidence</li>
           </ul>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4b. MY AUDIT TOOL — UXAuditor
+       PLACEHOLDER: if UXAuditor has a public link, add it to the
+       "Try UXAuditor" button below (or delete that button).
+       ============================================================ -->
+  <section class="section tool" id="tool" aria-labelledby="tool-title">
+    <div class="container tool__inner">
+      <div class="tool__copy reveal">
+        <p class="eyebrow">My audit tool</p>
+        <h2 id="tool-title">Meet UXAuditor: audits based on evidence, not guesswork</h2>
+        <p class="section-head__lead">Every audit I do is backed by UXAuditor, my dedicated UX audit tool. It shows your store the way your customers see it, so we fix what actually matters first.</p>
+        <ul class="tool__features">
+          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg></span>
+            <div><h3>Every device</h3><p>Full-page views of your store on desktop, tablet and mobile.</p></div></li>
+          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-target"></use></svg></span>
+            <div><h3>Attention heatmap</h3><p>Predicts where visitors look first, and whether your buttons get noticed.</p></div></li>
+          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+            <div><h3>Accessibility checks</h3><p>WCAG checks pinned to the exact spot on the page, so nothing is vague.</p></div></li>
+          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"></use></svg></span>
+            <div><h3>Prioritised fixes</h3><p>Load speed plus a ranked list of issues, so the biggest wins come first.</p></div></li>
+        </ul>
+        <div class="tool__actions">
+          <a class="btn btn--primary" href="#contact" data-service="Website CRO Audit">Audit my store</a>
+          <!-- <a class="btn btn--ghost" href="[UXAuditor link]" target="_blank" rel="noopener">Try UXAuditor</a> -->
+        </div>
+      </div>
+      <div class="tool__visual reveal">
+        <div class="mock-browser">
+          <div class="mock-browser__bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div class="mock-browser__url">UXAuditor</div>
+          </div>
+          <img src="images/uxauditor-report.jpg" width="1440" height="673" loading="lazy" decoding="async"
+               alt="UXAuditor report for a soap store homepage: an attention heatmap over the page, attention scores, and a numbered list of UX and accessibility issues">
+        </div>
       </div>
     </div>
   </section>
@@ -667,7 +721,7 @@
       <div class="about__photo reveal">
         <!-- Local: images/hina.jpg (portrait, 800×1000 recommended) -->
         <img src="images/hina.jpg"
-             data-fallback="https://placehold.co/800x1000/EFE6DA/7A6A5D?text=Your+Photo"
+             data-fallback="images/hina-placeholder.svg"
              width="800" height="1000" loading="lazy" decoding="async"
              alt="Portrait of Hina Manzoor, Shopify store designer and developer">
       </div>
@@ -714,7 +768,7 @@
         </details>
         <details class="accordion__item">
           <summary>What does the audit include?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
-          <div class="accordion__body"><p>The free mini audit is a short recorded walkthrough of the top issues on your store. The full CRO audit covers your homepage, collections, product pages, cart and mobile experience, with a prioritised fix list. The full audit is $100.</p></div>
+          <div class="accordion__body"><p>The free mini audit is a short recorded walkthrough of the top issues on your store. The full CRO audit covers your homepage, collections, product pages, cart and mobile experience, with a prioritised fix list. I use my own audit tool, UXAuditor, for heatmaps, accessibility and speed checks on desktop, tablet and mobile. The full audit is $100.</p></div>
         </details>
         <details class="accordion__item">
           <summary>How do payments work?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>

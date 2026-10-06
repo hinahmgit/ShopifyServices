@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <!-- Illustrated skincare storefront, used in the hero until you add a real screenshot -->
+  <rect width="1440" height="900" fill="#FBF7F1"/>
+  <rect width="1440" height="44" fill="#2F4A3A"/>
+  <rect x="560" y="18" width="320" height="8" rx="4" fill="#DCE6DD"/>
+  <rect x="80" y="76" width="140" height="22" rx="11" fill="#2A2522"/>
+  <g fill="#8C817A"><rect x="560" y="82" width="70" height="10" rx="5"/><rect x="660" y="82" width="70" height="10" rx="5"/><rect x="760" y="82" width="70" height="10" rx="5"/><rect x="860" y="82" width="70" height="10" rx="5"/></g>
+  <circle cx="1300" cy="87" r="11" fill="none" stroke="#2A2522" stroke-width="3"/><circle cx="1350" cy="87" r="11" fill="none" stroke="#2A2522" stroke-width="3"/>
+  <rect y="130" width="1440" height="470" fill="#F3E3D6"/>
+  <circle cx="1080" cy="365" r="200" fill="#EBD2C0"/>
+  <rect x="980" y="230" width="90" height="250" rx="22" fill="#FFFFFF"/><rect x="1000" y="200" width="50" height="40" rx="8" fill="#A65232"/>
+  <rect x="1095" y="300" width="110" height="180" rx="26" fill="#2F4A3A"/><rect x="1120" y="275" width="60" height="30" rx="8" fill="#C9BFB4"/>
+  <rect x="1000" y="330" width="50" height="8" rx="4" fill="#C9BFB4"/><rect x="1120" y="380" width="60" height="8" rx="4" fill="#DCE6DD"/>
+  <rect x="80" y="250" width="120" height="12" rx="6" fill="#A65232"/>
+  <rect x="80" y="290" width="560" height="44" rx="10" fill="#2A2522"/><rect x="80" y="350" width="440" height="44" rx="10" fill="#2A2522"/>
+  <rect x="80" y="420" width="460" height="12" rx="6" fill="#8C817A"/><rect x="80" y="444" width="380" height="12" rx="6" fill="#8C817A"/>
+  <rect x="80" y="490" width="200" height="56" rx="28" fill="#A65232"/><rect x="300" y="490" width="170" height="56" rx="28" fill="none" stroke="#2A2522" stroke-width="3"/>
+  <rect x="80" y="650" width="260" height="22" rx="8" fill="#2A2522"/>
+  <g>
+    <rect x="80" y="700" width="300" height="200" rx="16" fill="#EFE6DA"/><rect x="400" y="700" width="300" height="200" rx="16" fill="#E3EEE5"/>
+    <rect x="720" y="700" width="300" height="200" rx="16" fill="#F3E3D6"/><rect x="1040" y="700" width="300" height="200" rx="16" fill="#EFE6DA"/>
+    <rect x="200" y="740" width="60" height="140" rx="14" fill="#FFFFFF"/><rect x="515" y="760" width="70" height="120" rx="20" fill="#2F4A3A"/>
+    <rect x="835" y="745" width="70" height="135" rx="14" fill="#A65232"/><rect x="1160" y="770" width="60" height="110" rx="12" fill="#FFFFFF"/>
+  </g>
+</svg>

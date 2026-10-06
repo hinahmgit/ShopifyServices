@@ -42,7 +42,7 @@ Search `index.html` for `[` to find every text placeholder.
 | `[$$]` price range | JSON-LD |
 
 ### Images (exact filenames, put in `/images`)
-Until a file exists, a placehold.co placeholder appears automatically. Drop the real file in and it replaces the placeholder, with no HTML edits needed.
+Until a file exists, a "Screenshot coming soon" placeholder appears automatically. Drop the real file in and it replaces the placeholder, with no HTML edits needed.
 
 | File | Size |
 |---|---|

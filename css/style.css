@@ -589,6 +589,24 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .project--flip .project__body { padding: var(--space-4) 0 var(--space-4) var(--space-4); }
 }
 
+/* Project with a wide, short comparison (e.g. a single page section) */
+@media (min-width: 1024px) {
+  .project.project--wide { grid-template-columns: 1fr; gap: var(--space-5); }
+  .project--wide .project__body { padding: 0 var(--space-4) var(--space-4); }
+  .project--wide .project__cols { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+}
+.project__view-label {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+.ba.ba--strip { aspect-ratio: 1440 / 351; }
+.ba--strip .ba__label { top: var(--space-2); }
+.ba--strip .ba__img { object-position: center; }
+
 /* Desktop / Mobile toggle */
 .view-toggle {
   display: inline-flex;
@@ -721,6 +739,24 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .card-grid > .service:nth-child(4) { grid-column: 1 / span 3; }
   .card-grid > .service:nth-child(5) { grid-column: 4 / span 3; }
   .card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 8b. AUDIT TOOL (UXAuditor) ============================================ */
+.tool { padding-bottom: var(--space-7); }
+.tool__inner { display: grid; gap: var(--space-7); align-items: center; }
+.tool__copy h2 { max-width: 34rem; }
+.tool__features { display: grid; gap: var(--space-5); margin: var(--space-6) 0; }
+.tool__features li { display: flex; gap: var(--space-4); align-items: flex-start; }
+.tool__features .card__icon { width: 44px; height: 44px; margin: 0; flex-shrink: 0; }
+.tool__features .card__icon .icon { width: 22px; height: 22px; }
+.tool__features h3 { font-size: var(--fs-lg); margin-bottom: var(--space-1); }
+.tool__features p { color: var(--color-text-muted); font-size: var(--fs-sm); }
+.tool__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.tool__visual .mock-browser img { aspect-ratio: auto; object-fit: contain; }
+
+@media (min-width: 640px) { .tool__features { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1024px) {
+  .tool__inner { grid-template-columns: 1fr 1.15fr; gap: var(--space-8); }
 }
 
 /* 9. AUDIT BANNER ========================================================= */
@@ -1095,4 +1131,13 @@ button[disabled] { opacity: .7; cursor: progress; transform: none; }
   }
   .js .reveal { opacity: 1; transform: none; }
   .btn:hover, .card:hover, .footer__social a:hover { transform: none; }
+}
+
+/* Smaller labels & knob on short "strip" sliders on phones */
+@media (max-width: 639px) {
+  .ba--strip .ba__label { top: 4px; padding: .1rem .45rem; font-size: 10px; }
+  .ba--strip .ba__label--before { left: 4px; }
+  .ba--strip .ba__label--after { right: 4px; }
+  .ba--strip .ba__knob { width: 30px; height: 30px; }
+  .ba--strip .ba__knob .icon { width: 16px; height: 16px; }
 }
