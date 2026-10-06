@@ -306,7 +306,7 @@
         '<div class="form-success" role="status" tabindex="-1">' +
           '<span class="form-success__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>' +
           '<h3>Thank you' + (name ? ', ' + escapeHtml(name) : '') + '!</h3>' +
-          '<p>Your message is on its way. I\'ll get back to you within [1 business day].</p>' +
+          '<p>Your message is on its way. I\'ll get back to you within 24 hours.</p>' +
         '</div>';
       form.querySelector('.form-success').focus();
     }
