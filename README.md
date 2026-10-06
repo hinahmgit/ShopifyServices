@@ -20,34 +20,24 @@ Preview locally: open `index.html` in a browser. To test the contact form, run a
 
 Search `index.html` for `[` to find every text placeholder.
 
-### Must do before sharing
+### Still to do
 | What | Where |
 |---|---|
-| Email `[your-email@example.com]` | Contact links, footer social icons, JSON-LD |
-| LinkedIn / Instagram / Facebook links `[https://…]` | Contact links, footer, JSON-LD `sameAs` |
-| WhatsApp `[https://wa.me/15551234567]` (optional; delete the line if not used) | Contact links |
 | Project points ("What wasn't working" / "What I changed") are **drafts**. Edit them to match each real project | Each `<article class="project">` |
 | Results `[Result: e.g. +X% …]`. Use real numbers only, or remove them | Each project's Results box |
 | Novie outcome `[Outcome: …]` | Novie project |
-| Testimonials `[Client testimonial placeholder]`, `[Client name]`, `[Role, Brand name]`. Use real quotes only, or delete the section | Testimonials section |
-| Bio `[Bio placeholder]` (both paragraphs) | About section |
+| UXAuditor public link (optional): uncomment the "Try UXAuditor" button | UXAuditor section |
+| `og-image.jpg` link-preview image | `/images` |
 
-### Details
-| What | Where |
-|---|---|
-| Full name `Hina [Full Name]` | JSON-LD in `<head>` (also the `<title>`/footer if you want it) |
-| "Shopify Partner" trust badge. It's commented out; **uncomment only if true** | Hero, `trust-line` |
-| Reply time `[1 business day]` | Contact intro + success message in `js/main.js` |
-| FAQ: `[X–Y weeks]`, time-zone overlap, audit contents/price, payment terms | FAQ section |
-| `[$$]` price range | JSON-LD |
+Already filled in: name, contact and social links, WhatsApp, Shopify Partner badge, reply time (24 hours), FAQ details ($100 audit, 50/50 bank transfer, 2–4 weeks), testimonials, bio, contact form (FormSubmit).
 
 ### Images (exact filenames, put in `/images`)
 Until a file exists, a "Screenshot coming soon" placeholder appears automatically. Drop the real file in and it replaces the placeholder, with no HTML edits needed.
 
 | File | Size |
 |---|---|
-| `hero-desktop.jpg` / `hero-mobile.jpg` | 1440×900 / 390×844 |
-| `jennyjoy-before.jpg`, `jennyjoy-after.jpg` | 1440×900 |
+| `hero-desktop.jpg` / `hero-mobile.jpg` (optional; the hero uses an illustration until you swap the `src`) | 1440×900 / 390×844 |
+| `jennyjoy-before.jpg`, `jennyjoy-after.jpg` (then move them out of the `<template>` in the Jenny Joy project) | 1440×900 |
 | `jennyjoy-before-mobile.jpg`, `jennyjoy-after-mobile.jpg` | 390×844 |
 | `subtle-before.jpg`, `subtle-after.jpg` (+ `-mobile` versions) | same as above |
 | `novie-before.jpg`, `novie-after.jpg` (+ `-mobile` versions) | same as above |

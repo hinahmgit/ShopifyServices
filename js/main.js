@@ -19,7 +19,7 @@
   /* 1. IMAGE FALLBACKS ====================================================
      Every <img> with data-fallback points at a local file (e.g.
      images/jennyjoy-before.jpg). If that file doesn't exist yet, we swap in
-     the placehold.co URL. Once you upload the real image, it just works. */
+     a local "coming soon" placeholder. Once you upload the real image, it just works. */
   function useFallback(img) {
     var fb = img.getAttribute('data-fallback');
     if (fb && img.src !== fb) {
