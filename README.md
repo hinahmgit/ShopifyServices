@@ -23,7 +23,6 @@ Search `index.html` for `[` to find every text placeholder.
 ### Must do before sharing
 | What | Where |
 |---|---|
-| **Formspree form ID**: replace `YOUR_FORM_ID` | `index.html`, contact `<form action="https://formspree.io/f/YOUR_FORM_ID">` |
 | Email `[your-email@example.com]` | Contact links, footer social icons, JSON-LD |
 | LinkedIn / Instagram / Facebook links `[https://…]` | Contact links, footer, JSON-LD `sameAs` |
 | WhatsApp `[https://wa.me/15551234567]` (optional; delete the line if not used) | Contact links |
@@ -73,9 +72,9 @@ Until a file exists, a placehold.co placeholder appears automatically. Drop the 
 2. Dashboard → **Workers & Pages** → **hina** → **Create deployment** (top right; may also read "Create new deployment").
 3. Upload the folder again → **Save and Deploy**. The newest deployment becomes live; older ones stay in the list, so you can roll back.
 
-Tip: after deploying, test the contact form once and confirm the email arrives in your Formspree inbox. The first submission asks you to confirm your email.
+Tip: after deploying, send yourself a test message through the contact form. FormSubmit emails hinamanzoor101@gmail.com an **Activate Form** link on the first submission. Click it once, then every message arrives normally (check Spam the first time).
 
-**Formspree setup:** sign up at https://formspree.io → **New form** → copy the ID from the endpoint (`https://formspree.io/f/abcdwxyz` → `abcdwxyz`) → paste it in place of `YOUR_FORM_ID`.
+**Contact form:** uses [FormSubmit](https://formsubmit.co), with no account needed. To change the receiving email, edit the form `action` in `index.html`. Optional: after activation, FormSubmit sends you a random alias string. Use `https://formsubmit.co/<alias>` as the action to hide your email from bots.
 
 ---
 

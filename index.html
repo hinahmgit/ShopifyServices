@@ -729,10 +729,11 @@
 
   <!-- ============================================================
        11. CONTACT
-       FORMSPREE SETUP:
-       1. Create a free form at https://formspree.io
-       2. Copy your form ID (looks like "xyzabcde")
-       3. Replace YOUR_FORM_ID in the action URL below
+       CONTACT FORM — powered by FormSubmit (https://formsubmit.co)
+       No account needed. Messages go to the email in the action URL.
+       The very first submission sends an "Activate Form" email to that
+       inbox: click it once, then all messages arrive normally.
+       To change the receiving email, edit the action URL below.
        ============================================================ -->
   <section class="section contact" id="contact" aria-labelledby="contact-title">
     <div class="container contact__inner">
@@ -751,9 +752,13 @@
       </div>
 
       <form class="contact-form card reveal" id="contact-form"
-            action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-        <!--            ↑↑↑ PASTE YOUR FORMSPREE FORM ID HERE ↑↑↑ -->
+            action="https://formsubmit.co/hinamanzoor101@gmail.com" method="POST" novalidate>
+        <!-- FormSubmit settings -->
         <input type="hidden" name="_subject" value="New enquiry from hina.pages.dev">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Where visitors land if JavaScript is off -->
+        <input type="hidden" name="_next" value="https://hina.pages.dev/#contact">
 
         <div class="field">
           <label for="f-name">Name</label>
@@ -795,8 +800,8 @@
 
         <!-- Honeypot: hidden from people, catches spam bots -->
         <div class="hp" aria-hidden="true">
-          <label for="f-gotcha">Leave this empty</label>
-          <input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          <label for="f-honey">Leave this empty</label>
+          <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
         </div>
 
         <button class="btn btn--primary btn--block" type="submit">Send message</button>

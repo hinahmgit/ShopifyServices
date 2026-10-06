@@ -8,7 +8,7 @@
    5. Before / After comparison sliders
    6. Desktop / Mobile view tabs
    7. "Book a Free Audit" buttons pre-select the service
-   8. Contact form (validation + Formspree)
+   8. Contact form (validation + FormSubmit)
    9. Footer year
    ========================================================================== */
 (function () {
@@ -217,9 +217,9 @@
   });
 
   /* 8. CONTACT FORM =======================================================
-     Validates in the browser, then sends to Formspree with fetch so the
-     visitor stays on the page and sees a friendly success message.
-     Set your Formspree ID in index.html (form action). */
+     Validates in the browser, then sends to FormSubmit's AJAX endpoint so
+     the visitor stays on the page and sees a friendly success message.
+     The receiving email is set in index.html (form action). */
   var form = document.getElementById('contact-form');
   if (form) {
     var status = form.querySelector('.form-status');
@@ -273,23 +273,21 @@
       });
       if (firstInvalid) { firstInvalid.focus(); return; }
 
-      if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-        status.classList.add('is-error');
-        status.textContent = 'The form isn\'t connected yet. Please email me directly in the meantime.';
-        console.warn('Contact form: replace YOUR_FORM_ID in index.html with your Formspree form ID.');
-        return;
-      }
-
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
 
-      fetch(form.action, {
+      var data = new FormData(form);
+      data.append('_replyto', form.elements.email.value.trim()); // "Reply" in Gmail goes to the visitor
+
+      // https://formsubmit.co/you@mail.com -> https://formsubmit.co/ajax/you@mail.com
+      fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
         method: 'POST',
-        body: new FormData(form),
+        body: data,
         headers: { Accept: 'application/json' }
       })
-        .then(function (res) {
-          if (!res.ok) throw new Error('Request failed');
+        .then(function (res) { return res.json(); })
+        .then(function (json) {
+          if (String(json.success) !== 'true') throw new Error(json.message || 'Request failed');
           showSuccess();
         })
         .catch(function () {
