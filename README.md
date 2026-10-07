@@ -53,9 +53,9 @@ Until a file exists, a "Screenshot coming soon" placeholder appears automaticall
 1. **Sign up** at https://dash.cloudflare.com/sign-up (free plan; no domain needed).
 2. In the dashboard sidebar, open **Workers & Pages**.
 3. Click **Create** → choose the **Pages** tab → **Upload assets** (the option labelled "Use direct upload").
-4. **Project name: `hina`**. This gives you `hina.pages.dev`. If the name is taken, Cloudflare will suggest a variant. In that case, update the canonical URL and `og:` URLs in `index.html` to match.
+4. **Project name: `hina`**. This gives you `hinahm.pages.dev`. If the name is taken, Cloudflare will suggest a variant. In that case, update the canonical URL and `og:` URLs in `index.html` to match.
 5. Click **Create project**, then **drag in the whole site folder** (the folder that contains `index.html`, *not* a parent folder) or a `.zip` of it.
-6. Click **Deploy site**. After a few seconds it's live at **https://hina.pages.dev**.
+6. Click **Deploy site**. After a few seconds it's live at **https://hinahm.pages.dev**.
 
 **Redeploy after edits**
 1. Edit the files on your computer.
