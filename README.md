@@ -36,7 +36,7 @@ Until a file exists, a "Screenshot coming soon" placeholder appears automaticall
 
 | File | Size |
 |---|---|
-| `hero-desktop.jpg` / `hero-mobile.jpg` (optional; the hero uses an illustration until you swap the `src`) | 1440×900 / 390×844 |
+| `client-1.jpg`, `client-2.jpg`, `client-3.jpg` (review profile photos, only with client permission) | 200×200 |
 | `jennyjoy-before.jpg`, `jennyjoy-after.jpg` (then move them out of the `<template>` in the Jenny Joy project) | 1440×900 |
 | `jennyjoy-before-mobile.jpg`, `jennyjoy-after-mobile.jpg` | 390×844 |
 | `subtle-before.jpg`, `subtle-after.jpg` (+ `-mobile` versions) | same as above |
@@ -87,4 +87,11 @@ Tip: after deploying, send yourself a test message through the contact form. For
 ---
 
 ## Rebranding quickly
-Open `css/style.css`. All colors, fonts, spacing and corner radii are CSS variables at the top (`--color-accent`, `--font-heading`, etc.). Change `--color-accent` and `--color-accent-dark` to switch from terracotta to sage or dusty rose. For a full switch, also search `style.css` for `A65232` and `166, 82, 50` (a checklist icon and a few soft shadows), and update `favicon.svg`.
+Open `css/style.css`. All colors, fonts, spacing and corner radii are CSS variables at the top (`--ink`, `--green`, `--lime`, `--font`, `--r`, etc.). The palette is white, near-black and Shopify green (`#008060`, with the Shopify logo green `#95BF47` used only on dark surfaces). Icons come from Phosphor Icons and brand logos from Simple Icons, inlined in the sprite at the top of `index.html`.
+
+## Effects at a glance
+- Headlines rise word by word, and sections fade or slide in as you scroll (IntersectionObserver).
+- The hero screenshots tilt gently toward the mouse; service tiles have a cursor spotlight.
+- Before/after sliders nudge once when they first scroll into view.
+- The process line draws itself, and a thin green progress bar tracks scrolling (supported browsers).
+- Everything switches off for visitors with "reduce motion" turned on.

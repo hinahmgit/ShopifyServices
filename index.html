@@ -6,48 +6,43 @@
 
   <!-- ============================================================
        SEO BASICS
-       Edit the title and description to change how the site looks
-       in Google results and link previews.
        ============================================================ -->
-  <title>Hina Manzoor — Shopify Store Redesign &amp; Conversion-Focused UX</title>
+  <title>Hina Manzoor | Shopify Store Redesign &amp; Conversion-Focused UX</title>
   <meta name="description" content="I redesign Shopify stores that turn visitors into buyers. Conversion-focused Shopify redesigns for small US product brands in skincare, soap and beauty.">
   <link rel="canonical" href="https://hinahm.pages.dev/">
-  <meta name="theme-color" content="#FBF7F1">
+  <meta name="theme-color" content="#FAFAFA">
   <meta name="author" content="Hina Manzoor">
 
   <!-- Open Graph (Facebook, LinkedIn, WhatsApp, iMessage previews) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hinahm.pages.dev/">
-  <meta property="og:title" content="Hina Manzoor — Shopify Store Redesign &amp; Conversion-Focused UX">
+  <meta property="og:title" content="Hina Manzoor | Shopify Store Redesign &amp; Conversion-Focused UX">
   <meta property="og:description" content="Conversion-focused Shopify redesigns for small product brands in skincare, soap and beauty.">
   <!-- PLACEHOLDER: add a 1200×630 image at images/og-image.jpg -->
   <meta property="og:image" content="https://hinahm.pages.dev/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Hina Manzoor — Shopify Store Designer &amp; Developer">
+  <meta property="og:image:alt" content="Hina Manzoor, Shopify Store Designer &amp; Developer">
 
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hina Manzoor — Shopify Store Redesign &amp; Conversion-Focused UX">
+  <meta name="twitter:title" content="Hina Manzoor | Shopify Store Redesign &amp; Conversion-Focused UX">
   <meta name="twitter:description" content="Conversion-focused Shopify redesigns for small product brands in skincare, soap and beauty.">
   <meta name="twitter:image" content="https://hinahm.pages.dev/images/og-image.jpg">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-  <!-- Google Fonts: Fraunces (headings) + DM Sans (body) -->
+  <!-- Fonts: Geist (headings + body) and Geist Mono (small labels and numbers) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 
   <link rel="stylesheet" href="css/style.css">
   <!-- Marks that JS is on, so scroll animations never hide content when JS is off -->
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
 
-  <!-- ============================================================
-       STRUCTURED DATA (JSON-LD) — helps Google understand who you are.
-       Replace the [placeholders] with your real details.
-       ============================================================ -->
+  <!-- STRUCTURED DATA (JSON-LD): helps Google understand who you are -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,7 +64,7 @@
       {
         "@type": "ProfessionalService",
         "@id": "https://hinahm.pages.dev/#service",
-        "name": "Hina Manzoor — Shopify Store Redesign & Conversion-Focused UX",
+        "name": "Hina Manzoor | Shopify Store Redesign & Conversion-Focused UX",
         "url": "https://hinahm.pages.dev/",
         "image": "https://hinahm.pages.dev/images/og-image.jpg",
         "description": "Conversion-focused Shopify store redesigns, CRO audits and custom theme development for small product brands in skincare, soap and beauty.",
@@ -90,46 +85,66 @@
 </head>
 <body>
 
-<!-- ============================================================
-     ICON SPRITE — every icon on the page is drawn from here.
-     Use one with: <svg><use href="#i-name"></use></svg>
-     ============================================================ -->
+<!-- ICON SPRITE: Phosphor Icons (MIT) + Simple Icons brand logos (CC0).
+     Use one with: <svg class="icon"><use href="#i-name"></use></svg> -->
 <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
   <defs>
-    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
-    <symbol id="i-trending" viewBox="0 0 24 24"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></symbol>
-    <symbol id="i-clipboard" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></symbol>
-    <symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
-    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
-    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
-    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
-    <symbol id="i-arrows" viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></symbol>
-    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
-    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
-    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
-    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
-    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
-    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
-    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-storefront" viewBox="0 0 256 256"><path d="M232,96a7.89,7.89,0,0,0-.3-2.2L217.35,43.6A16.07,16.07,0,0,0,202,32H54A16.07,16.07,0,0,0,38.65,43.6L24.31,93.8A7.89,7.89,0,0,0,24,96h0v16a40,40,0,0,0,16,32v72a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V144a40,40,0,0,0,16-32V96ZM54,48H202l11.42,40H42.61Zm50,56h48v8a24,24,0,0,1-48,0Zm-16,0v8a24,24,0,0,1-35.12,21.26,7.88,7.88,0,0,0-1.82-1.06A24,24,0,0,1,40,112v-8ZM200,208H56V151.2a40.57,40.57,0,0,0,8,.8,40,40,0,0,0,32-16,40,40,0,0,0,64,0,40,40,0,0,0,32,16,40.57,40.57,0,0,0,8-.8Zm4.93-75.8a8.08,8.08,0,0,0-1.8,1.05A24,24,0,0,1,168,112v-8h48v8A24,24,0,0,1,204.93,132.2Z"/></symbol>
+    <symbol id="i-cursor-click" viewBox="0 0 256 256"><path d="M88,24V16a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0ZM16,104h8a8,8,0,0,0,0-16H16a8,8,0,0,0,0,16ZM124.42,39.16a8,8,0,0,0,10.74-3.58l8-16a8,8,0,0,0-14.31-7.16l-8,16A8,8,0,0,0,124.42,39.16Zm-96,81.69-16,8a8,8,0,0,0,7.16,14.31l16-8a8,8,0,1,0-7.16-14.31ZM219.31,184a16,16,0,0,1,0,22.63l-12.68,12.68a16,16,0,0,1-22.63,0L132.7,168,115,214.09c0,.1-.08.21-.13.32a15.83,15.83,0,0,1-14.6,9.59l-.79,0a15.83,15.83,0,0,1-14.41-11L32.8,52.92A16,16,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.32.13L168,132.69ZM208,195.31,156.69,144h0a16,16,0,0,1,4.93-26l.32-.14,45.95-17.64L48,48l52.2,159.86,17.65-46c0-.11.08-.22.13-.33a16,16,0,0,1,11.69-9.34,16.72,16.72,0,0,1,3-.28,16,16,0,0,1,11.3,4.69L195.31,208Z"/></symbol>
+    <symbol id="i-clipboard-text" viewBox="0 0 256 256"><path d="M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.93,47.93,0,0,1,2.75-16H56V216H200Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 256 256"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></symbol>
+    <symbol id="i-rocket-launch" viewBox="0 0 256 256"><path d="M223.85,47.12a16,16,0,0,0-15-15c-12.58-.75-44.73.4-71.41,27.07L132.69,64H74.36A15.91,15.91,0,0,0,63,68.68L28.7,103a16,16,0,0,0,9.07,27.16l38.47,5.37,44.21,44.21,5.37,38.49a15.94,15.94,0,0,0,10.78,12.92,16.11,16.11,0,0,0,5.1.83A15.91,15.91,0,0,0,153,227.3L187.32,193A15.91,15.91,0,0,0,192,181.64V123.31l4.77-4.77C223.45,91.86,224.6,59.71,223.85,47.12ZM74.36,80h42.33L77.16,119.52,40,114.34Zm74.41-9.45a76.65,76.65,0,0,1,59.11-22.47,76.46,76.46,0,0,1-22.42,59.16L128,164.68,91.32,128ZM176,181.64,141.67,216l-5.19-37.17L176,139.31Zm-74.16,9.5C97.34,201,82.29,224,40,224a8,8,0,0,1-8-8c0-42.29,23-57.34,32.86-61.85a8,8,0,0,1,6.64,14.56c-6.43,2.93-20.62,12.36-23.12,38.91,26.55-2.5,36-16.69,38.91-23.12a8,8,0,1,1,14.56,6.64Z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 256 256"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 256 256"><path d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z"/></symbol>
+    <symbol id="i-chat-circle-text" viewBox="0 0 256 256"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></symbol>
+    <symbol id="i-lightning" viewBox="0 0 256 256"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"/></symbol>
+    <symbol id="i-arrows-left-right" viewBox="0 0 256 256"><path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"/></symbol>
+    <symbol id="i-caret-down" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol>
+    <symbol id="i-envelope-simple" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+    <symbol id="i-linkedin-logo" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></symbol>
+    <symbol id="i-instagram-logo" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+    <symbol id="i-facebook-logo" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+    <symbol id="i-whatsapp-logo" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 256 256"><path d="M224,72H208V64a24,24,0,0,0-24-24H40A24,24,0,0,0,16,64v96a24,24,0,0,0,24,24H152v8a24,24,0,0,0,24,24h48a24,24,0,0,0,24-24V96A24,24,0,0,0,224,72ZM40,168a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8v8H176a24,24,0,0,0-24,24v72Zm192,24a8,8,0,0,1-8,8H176a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8Zm-96,16a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h40A8,8,0,0,1,136,208Zm80-96a8,8,0,0,1-8,8H192a8,8,0,0,1,0-16h16A8,8,0,0,1,216,112Z"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 256 256"><path d="M183.89,153.34a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68ZM216,144a88,88,0,0,1-176,0c0-27.92,11-56.47,32.66-84.85a8,8,0,0,1,11.93-.89l24.12,23.41,22-60.41a8,8,0,0,1,12.63-3.41C165.21,36,216,84.55,216,144Zm-16,0c0-46.09-35.79-85.92-58.21-106.33L119.52,98.74a8,8,0,0,1-13.09,3L80.06,76.16C64.09,99.21,56,122,56,144a72,72,0,0,0,144,0Z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 256 256"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"/></symbol>
+    <symbol id="i-list-numbers" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H104a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM104,72H216a8,8,0,0,0,0-16H104a8,8,0,0,0,0,16ZM216,184H104a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16ZM43.58,55.16,48,52.94V104a8,8,0,0,0,16,0V40a8,8,0,0,0-11.58-7.16l-16,8a8,8,0,0,0,7.16,14.32ZM79.77,156.72a23.73,23.73,0,0,0-9.6-15.95,24.86,24.86,0,0,0-34.11,4.7,23.63,23.63,0,0,0-3.57,6.46,8,8,0,1,0,15,5.47,7.84,7.84,0,0,1,1.18-2.13,8.76,8.76,0,0,1,12-1.59A7.91,7.91,0,0,1,63.93,159a7.64,7.64,0,0,1-1.57,5.78,1,1,0,0,0-.08.11L33.59,203.21A8,8,0,0,0,40,216H72a8,8,0,0,0,0-16H56l19.08-25.53A23.47,23.47,0,0,0,79.77,156.72Z"/></symbol>
+    <symbol id="i-magnifying-glass" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,72.84l-64,32a8.05,8.05,0,0,0-3.58,3.58l-32,64A8,8,0,0,0,80,184a8.1,8.1,0,0,0,3.58-.84l64-32a8.05,8.05,0,0,0,3.58-3.58l32-64a8,8,0,0,0-10.74-10.74ZM138,138,97.89,158.11,118,118l40.15-20.07Z"/></symbol>
+    <symbol id="i-pen-nib" viewBox="0 0 256 256"><path d="M248,92.68a15.86,15.86,0,0,0-4.69-11.31L174.63,12.68a16,16,0,0,0-22.63,0L123.57,41.11l-58,21.77A16.06,16.06,0,0,0,55.35,75.23L32.11,214.68A8,8,0,0,0,40,224a8.4,8.4,0,0,0,1.32-.11l139.44-23.24a16,16,0,0,0,12.35-10.17l21.77-58L243.31,104A15.87,15.87,0,0,0,248,92.68Zm-69.87,92.19L63.32,204l47.37-47.37a28,28,0,1,0-11.32-11.32L52,192.7,71.13,77.86,126,57.29,198.7,130ZM112,132a12,12,0,1,1,12,12A12,12,0,0,1,112,132Zm96-15.32L139.31,48l24-24L232,92.68Z"/></symbol>
+    <symbol id="i-package" viewBox="0 0 256 256"><path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"/></symbol>
+    <symbol id="i-shopping-bag-open" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V72H40V56Zm0,144H40V88H216V200Zm-40-88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"/></symbol>
+    <symbol id="i-seal-check" viewBox="0 0 256 256"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 256 256"><path d="M234.29,114.85l-45,38.83L203,211.75a16.4,16.4,0,0,1-24.5,17.82L128,198.49,77.47,229.57A16.4,16.4,0,0,1,53,211.75l13.76-58.07-45-38.83A16.46,16.46,0,0,1,31.08,86l59-4.76,22.76-55.08a16.36,16.36,0,0,1,30.27,0l22.75,55.08,59,4.76a16.46,16.46,0,0,1,9.37,28.86Z"/></symbol>
+    <symbol id="i-quotes" viewBox="0 0 256 256"><path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56h60A16,16,0,0,1,116,72ZM216,56H156a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16h60v8a32,32,0,0,1-32,32,8,8,0,0,0,0,16,48.05,48.05,0,0,0,48-48V72A16,16,0,0,0,216,56Z"/></symbol>
+    <symbol id="logo-shopify" viewBox="0 0 24 24"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></symbol>
+    <symbol id="logo-upwork" viewBox="0 0 24 24"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></symbol>
+    <symbol id="logo-fiverr" viewBox="0 0 24 24"><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/></symbol>
+    <symbol id="logo-figma" viewBox="0 0 24 24"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></symbol>
+    <symbol id="logo-html5" viewBox="0 0 24 24"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></symbol>
+    <symbol id="logo-css" viewBox="0 0 24 24"><path d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></symbol>
+    <symbol id="logo-javascript" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></symbol>
   </defs>
 </svg>
 
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <!-- ============================================================
-     1. STICKY HEADER
+     HEADER
      ============================================================ -->
 <header class="site-header" id="top">
   <div class="container header__inner">
-    <a class="wordmark" href="#top" aria-label="Hina — back to top">Hina<span aria-hidden="true">.</span></a>
+    <a class="wordmark" href="#top" aria-label="Hina Manzoor, back to top">
+      <span class="wordmark__mark" aria-hidden="true">H</span>
+      <span class="wordmark__text">Hina Manzoor</span>
+    </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span class="sr-only">Open menu</span>
-      <span class="nav-toggle__bar" aria-hidden="true"></span>
       <span class="nav-toggle__bar" aria-hidden="true"></span>
       <span class="nav-toggle__bar" aria-hidden="true"></span>
     </button>
@@ -142,75 +157,91 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="btn btn--primary btn--sm" href="#contact" data-service="Website CRO Audit">Book a Free Audit</a>
+      <a class="btn btn--dark btn--sm" href="#contact" data-service="Website CRO Audit">Get a free audit</a>
     </nav>
   </div>
 </header>
+<div class="header-sentinel" aria-hidden="true"></div>
 
 <main id="main">
 
   <!-- ============================================================
-       2. HERO
+       HERO
        ============================================================ -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="container hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow reveal">Shopify Store Redesign &amp; Conversion-Focused UX</p>
-        <h1 id="hero-title" class="hero__title reveal">I redesign Shopify stores that turn <em>visitors into buyers.</em></h1>
-        <p class="hero__lead reveal">Conversion-focused Shopify redesigns for small product brands in skincare, soap and beauty. Clearer pages, more trust, a smoother path to checkout.</p>
-        <div class="hero__actions reveal">
-          <a class="btn btn--primary" href="#work">See Before &amp; After</a>
-          <a class="btn btn--ghost" href="#contact" data-service="Website CRO Audit">Get a Free Store Audit</a>
+        <p class="hero__badge" data-reveal>
+          <svg class="icon icon--shopify" aria-hidden="true"><use href="#logo-shopify"></use></svg>
+          Shopify Partner<span class="hide-sm"> for skincare, soap &amp; beauty brands</span>
+        </p>
+        <h1 id="hero-title" class="hero__title" data-split>Shopify stores that turn visitors <span class="hl">into buyers.</span></h1>
+        <p class="hero__lead" data-reveal>Conversion-focused redesigns for small product brands. Clearer pages, more trust, a smoother path to checkout.</p>
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--dark" href="#contact" data-service="Website CRO Audit">Get a free audit
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          <a class="btn btn--ghost" href="#work">See the work</a>
         </div>
-        <ul class="trust-line reveal" aria-label="Highlights">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Shopify Partner</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Working with US brands</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>Skincare, soap &amp; beauty focus</li>
-        </ul>
       </div>
 
-      <!-- Hero visual: browser + phone mockup.
-           Currently an illustration. To use a real screenshot, add images/hero-desktop.jpg (1440×900)
-           and images/hero-mobile.jpg (390×844) and change the two src values below. -->
-      <div class="hero__visual">
-        <div class="mock-browser">
-          <div class="mock-browser__bar" aria-hidden="true">
-            <span></span><span></span><span></span>
-            <div class="mock-browser__url">yourbrand.com</div>
-          </div>
-          <img src="images/hero-desktop.svg"
-               width="1440" height="900" fetchpriority="high" decoding="async"
-               alt="Desktop homepage of a redesigned skincare Shopify store">
-        </div>
-        <div class="mock-phone">
-          <img src="images/hero-mobile.svg"
-               width="390" height="844" loading="lazy" decoding="async"
-               alt="The same store on a mobile phone">
-        </div>
+      <!-- Real work, layered: a UXAuditor report and a Jenny Joy's Soap redesign -->
+      <div class="hero__stage" data-tilt data-reveal="scale">
+        <figure class="shot shot--back">
+          <div class="shot__bar" aria-hidden="true"><span></span><span></span><span></span><em>UXAuditor report</em></div>
+          <img src="images/uxauditor-report.jpg" width="1440" height="673" fetchpriority="high" decoding="async"
+               alt="UXAuditor report: an attention heatmap over a soap store homepage with a list of UX issues">
+        </figure>
+        <figure class="shot shot--front">
+          <div class="shot__bar" aria-hidden="true"><span></span><span></span><span></span><em>jennyjoyssoap.com</em></div>
+          <img src="images/jennyjoy-email-after.jpg" width="1440" height="351" decoding="async"
+               alt="Redesigned email signup section on Jenny Joy's Soap: Stay inspired. Stay connected.">
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       3. BEFORE & AFTER SHOWCASE
-       Each project = one <article class="project">.
+       PROOF STRIP (real ratings from Upwork and Fiverr)
+       ============================================================ -->
+  <section class="proof" aria-label="Ratings and credentials">
+    <div class="container">
+      <ul class="proof__list" data-reveal>
+        <li>
+          <svg class="icon proof__logo" aria-hidden="true"><use href="#logo-upwork"></use></svg>
+          <span><strong>5.0</strong> <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg></span> on Upwork</span>
+        </li>
+        <li>
+          <svg class="icon proof__logo" aria-hidden="true"><use href="#logo-fiverr"></use></svg>
+          <span><strong>5.0</strong> <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg></span> on Fiverr</span>
+        </li>
+        <li>
+          <svg class="icon proof__logo proof__logo--shopify" aria-hidden="true"><use href="#logo-shopify"></use></svg>
+          <span>Shopify Partner</span>
+        </li>
+        <li>
+          <svg class="icon proof__logo" aria-hidden="true"><use href="#i-storefront"></use></svg>
+          <span>Working with US brands</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BEFORE & AFTER
        Image files (desktop 1440×900, mobile 390×844):
-         images/<name>-before.jpg         images/<name>-after.jpg
-         images/<name>-before-mobile.jpg  images/<name>-after-mobile.jpg
-       Until you add them, a "Screenshot coming soon" placeholder is shown.
+         images/<name>-before.jpg  images/<name>-after.jpg
+       Until you add them, a "coming soon" placeholder is shown.
        ============================================================ -->
   <section class="section work" id="work" aria-labelledby="work-title">
     <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="work-title">Before &amp; After</h2>
+      <header class="section-head" data-reveal>
+        <h2 id="work-title" data-split>Before and after</h2>
         <p class="section-head__lead">Drag the handle to compare. Every redesign starts with one question: what is stopping a visitor from buying?</p>
       </header>
 
-      <!-- ---------- PROJECT A: Jenny Joy's Soap ---------- -->
-      <article class="project project--wide reveal" aria-labelledby="p-jj-title">
-        <div class="project__media">
-          <p class="project__view-label">Email signup section</p>
+      <!-- ---------- FEATURED: Jenny Joy's Soap ---------- -->
+      <article class="feature" aria-labelledby="p-jj-title" data-reveal>
+        <div class="feature__media">
           <div class="ba ba--strip" data-ba>
             <img class="ba__img" src="images/jennyjoy-email-before.jpg"
                  width="1440" height="351" loading="lazy" decoding="async"
@@ -221,69 +252,39 @@
             <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
             <span class="ba__label ba__label--after" aria-hidden="true">After</span>
             <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Jenny Joy's Soap email signup section" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-              <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
+              <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows-left-right"></use></svg></span>
             </div>
           </div>
+          <p class="feature__caption">Email signup section, before and after.</p>
 
           <!-- LATER: homepage Desktop/Mobile comparisons for Jenny Joy's Soap.
-               When you have the 4 screenshots, move everything inside <template> up here
-               (above the email signup slider) and delete the <template> tags. -->
+               Add images/jennyjoy-before.jpg, jennyjoy-after.jpg (1440×900) and the
+               -mobile versions (390×844), then move the slider inside <template> up here. -->
           <template>
-          <div class="view-toggle" role="tablist" aria-label="Screenshot view for Jenny Joy's Soap">
-            <button type="button" role="tab" id="jj-tab-desktop" aria-controls="jj-panel-desktop" aria-selected="true">Desktop</button>
-            <button type="button" role="tab" id="jj-tab-mobile" aria-controls="jj-panel-mobile" aria-selected="false" tabindex="-1">Mobile</button>
-          </div>
-
-          <div class="view-panel" id="jj-panel-desktop" role="tabpanel" aria-labelledby="jj-tab-desktop">
             <div class="ba" data-ba>
-              <img class="ba__img" src="images/jennyjoy-before.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Jenny Joy's Soap homepage before the redesign">
-              <img class="ba__img ba__img--after" src="images/jennyjoy-after.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Jenny Joy's Soap homepage after the redesign">
+              <img class="ba__img" src="images/jennyjoy-before.jpg" data-fallback="images/placeholder-desktop.svg" width="1440" height="900" loading="lazy" decoding="async" alt="Jenny Joy's Soap homepage before the redesign">
+              <img class="ba__img ba__img--after" src="images/jennyjoy-after.jpg" data-fallback="images/placeholder-desktop.svg" width="1440" height="900" loading="lazy" decoding="async" alt="Jenny Joy's Soap homepage after the redesign">
               <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
               <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Jenny Joy's Soap desktop" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
+              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Jenny Joy's Soap homepage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows-left-right"></use></svg></span>
               </div>
             </div>
-          </div>
-
-          <div class="view-panel view-panel--mobile" id="jj-panel-mobile" role="tabpanel" aria-labelledby="jj-tab-mobile" hidden>
-            <div class="ba ba--mobile" data-ba>
-              <img class="ba__img" src="images/jennyjoy-before-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Jenny Joy's Soap on mobile before the redesign">
-              <img class="ba__img ba__img--after" src="images/jennyjoy-after-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Jenny Joy's Soap on mobile after the redesign">
-              <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
-              <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Jenny Joy's Soap mobile" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
-              </div>
-            </div>
-          </div>
           </template>
         </div>
 
-        <div class="project__body">
-          <div class="project__meta">
+        <div class="feature__body">
+          <div class="feature__meta">
             <h3 id="p-jj-title">Jenny Joy's Soap</h3>
-            <p class="project__type">Handmade soap brand · <a href="https://jennyjoyssoap.com" target="_blank" rel="noopener">jennyjoyssoap.com</a></p>
+            <p>Handmade soap brand, United States. <a href="https://jennyjoyssoap.com" target="_blank" rel="noopener">jennyjoyssoap.com <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></a></p>
           </div>
           <!-- DRAFT: edit the points below so they match this project exactly -->
-          <div class="project__cols">
+          <div class="feature__cols">
             <div>
               <h4>What wasn't working</h4>
               <ul class="list list--minus">
                 <li>Busy homepage with no clear path to best-sellers</li>
-                <li>Product pages light on trust: ingredients, reviews and shipping info were hard to find</li>
+                <li>Ingredients, reviews and shipping info were hard to find</li>
                 <li>Mobile layout felt cramped, with small tap targets</li>
               </ul>
             </div>
@@ -293,7 +294,7 @@
                 <li>Turned a default signup box into a branded "little joy in your inbox" section</li>
                 <li>Rebuilt the homepage around best-sellers and the brand story</li>
                 <li>Redesigned product pages with clear ingredients, benefits and reviews</li>
-                <li>Added trust cues near Add to Cart (shipping, returns, handmade promise)</li>
+                <li>Added trust cues near Add to Cart</li>
               </ul>
             </div>
           </div>
@@ -303,249 +304,128 @@
             <ul class="results__list">
               <li>[Result: e.g. +X% add-to-cart rate]</li>
               <li>[Result: e.g. +X% conversion rate]</li>
-              <li>[Result: e.g. client quote or qualitative win]</li>
             </ul>
           </div>
         </div>
       </article>
 
-      <!-- ---------- PROJECT B: Subtle Commerce ---------- -->
-      <article class="project project--flip reveal" aria-labelledby="p-sc-title">
-        <div class="project__media">
-          <div class="view-toggle" role="tablist" aria-label="Screenshot view for Subtle Commerce">
-            <button type="button" role="tab" id="sc-tab-desktop" aria-controls="sc-panel-desktop" aria-selected="true">Desktop</button>
-            <button type="button" role="tab" id="sc-tab-mobile" aria-controls="sc-panel-mobile" aria-selected="false" tabindex="-1">Mobile</button>
-          </div>
-
-          <div class="view-panel" id="sc-panel-desktop" role="tabpanel" aria-labelledby="sc-tab-desktop">
-            <div class="ba" data-ba>
-              <!-- Local: images/subtle-before.jpg -->
-              <img class="ba__img" src="images/subtle-before.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Subtle Commerce website before the redesign">
-              <!-- Local: images/subtle-after.jpg -->
-              <img class="ba__img ba__img--after" src="images/subtle-after.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Subtle Commerce website after the redesign">
-              <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
-              <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Subtle Commerce desktop" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
-              </div>
+      <!-- ---------- MORE PROJECTS ---------- -->
+      <div class="work__grid">
+        <article class="project" aria-labelledby="p-sc-title" data-reveal>
+          <div class="ba" data-ba>
+            <img class="ba__img" src="images/subtle-before.jpg" data-fallback="images/placeholder-desktop.svg"
+                 width="1440" height="900" loading="lazy" decoding="async" alt="Subtle Commerce website before the redesign">
+            <img class="ba__img ba__img--after" src="images/subtle-after.jpg" data-fallback="images/placeholder-desktop.svg"
+                 width="1440" height="900" loading="lazy" decoding="async" alt="Subtle Commerce website after the redesign">
+            <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
+            <span class="ba__label ba__label--after" aria-hidden="true">After</span>
+            <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Subtle Commerce" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows-left-right"></use></svg></span>
             </div>
           </div>
-
-          <div class="view-panel view-panel--mobile" id="sc-panel-mobile" role="tabpanel" aria-labelledby="sc-tab-mobile" hidden>
-            <div class="ba ba--mobile" data-ba>
-              <!-- Local: images/subtle-before-mobile.jpg -->
-              <img class="ba__img" src="images/subtle-before-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Subtle Commerce on mobile before the redesign">
-              <!-- Local: images/subtle-after-mobile.jpg -->
-              <img class="ba__img ba__img--after" src="images/subtle-after-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Subtle Commerce on mobile after the redesign">
-              <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
-              <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Subtle Commerce mobile" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project__body">
-          <div class="project__meta">
+          <div class="project__body">
             <h3 id="p-sc-title">Subtle Commerce</h3>
-            <p class="project__type">eCommerce agency website · <a href="https://subtlecommerce.com" target="_blank" rel="noopener">subtlecommerce.com</a></p>
-          </div>
-          <!-- DRAFT: edit the points below so they match this project exactly -->
-          <div class="project__cols">
-            <div>
-              <h4>What wasn't working</h4>
-              <ul class="list list--minus">
-                <li>Services were hard to scan, so visitors couldn't see the offer quickly</li>
-                <li>Weak, scattered calls to action</li>
-                <li>Dated visual style that undersold the agency's work</li>
-              </ul>
-            </div>
-            <div>
-              <h4>What I changed</h4>
-              <ul class="list list--check">
-                <li>Clear headline and service structure above the fold</li>
-                <li>One primary call to action, repeated at the right moments</li>
-                <li>Modern, editorial visual system with consistent spacing</li>
-                <li>Faster, fully responsive pages</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Results box hidden until you have real numbers: delete the word "hidden" to show it -->
-          <div class="results" hidden>
-            <h4>Results</h4>
-            <ul class="results__list">
-              <li>[Result: e.g. +X% enquiry form submissions]</li>
-              <li>[Result: e.g. lower bounce rate on the homepage]</li>
-              <li>[Result: e.g. client quote or qualitative win]</li>
+            <p class="project__type">eCommerce agency website. <a href="https://subtlecommerce.com" target="_blank" rel="noopener">subtlecommerce.com</a></p>
+            <!-- DRAFT: edit to match this project -->
+            <ul class="list list--check">
+              <li>Clear headline and service structure above the fold</li>
+              <li>One primary call to action, repeated at the right moments</li>
+              <li>Modern visual system with consistent spacing</li>
             </ul>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- ---------- PROJECT C: Novie (Concept) ---------- -->
-      <article class="project reveal" aria-labelledby="p-nv-title">
-        <div class="project__media">
-          <div class="view-toggle" role="tablist" aria-label="Screenshot view for Novie">
-            <button type="button" role="tab" id="nv-tab-desktop" aria-controls="nv-panel-desktop" aria-selected="true">Desktop</button>
-            <button type="button" role="tab" id="nv-tab-mobile" aria-controls="nv-panel-mobile" aria-selected="false" tabindex="-1">Mobile</button>
-          </div>
-
-          <div class="view-panel" id="nv-panel-desktop" role="tabpanel" aria-labelledby="nv-tab-desktop">
-            <div class="ba" data-ba>
-              <!-- Local: images/novie-before.jpg -->
-              <img class="ba__img" src="images/novie-before.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Novie skincare concept store, starting theme before customisation">
-              <!-- Local: images/novie-after.jpg -->
-              <img class="ba__img ba__img--after" src="images/novie-after.jpg"
-                   data-fallback="images/placeholder-desktop.svg"
-                   width="1440" height="900" loading="lazy" decoding="async"
-                   alt="Novie skincare concept store after the redesign">
-              <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
-              <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Novie desktop" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
-              </div>
+        <article class="project" aria-labelledby="p-nv-title" data-reveal>
+          <div class="ba" data-ba>
+            <img class="ba__img" src="images/novie-before.jpg" data-fallback="images/placeholder-desktop.svg"
+                 width="1440" height="900" loading="lazy" decoding="async" alt="Novie skincare concept store, starting theme before customisation">
+            <img class="ba__img ba__img--after" src="images/novie-after.jpg" data-fallback="images/placeholder-desktop.svg"
+                 width="1440" height="900" loading="lazy" decoding="async" alt="Novie skincare concept store after the redesign">
+            <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
+            <span class="ba__label ba__label--after" aria-hidden="true">After</span>
+            <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Novie" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows-left-right"></use></svg></span>
             </div>
           </div>
-
-          <div class="view-panel view-panel--mobile" id="nv-panel-mobile" role="tabpanel" aria-labelledby="nv-tab-mobile" hidden>
-            <div class="ba ba--mobile" data-ba>
-              <!-- Local: images/novie-before-mobile.jpg -->
-              <img class="ba__img" src="images/novie-before-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Novie on mobile before the redesign">
-              <!-- Local: images/novie-after-mobile.jpg -->
-              <img class="ba__img ba__img--after" src="images/novie-after-mobile.jpg"
-                   data-fallback="images/placeholder-mobile.svg"
-                   width="390" height="844" loading="lazy" decoding="async"
-                   alt="Novie on mobile after the redesign">
-              <span class="ba__label ba__label--before" aria-hidden="true">Before</span>
-              <span class="ba__label ba__label--after" aria-hidden="true">After</span>
-              <div class="ba__handle" role="slider" tabindex="0" aria-label="Before and after comparison, Novie mobile" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                <span class="ba__knob"><svg class="icon" aria-hidden="true"><use href="#i-arrows"></use></svg></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="project__body">
-          <div class="project__meta">
-            <h3 id="p-nv-title">Novie <span class="badge">Concept Project</span></h3>
-            <p class="project__type">Skincare brand concept store, built on Shopify</p>
-          </div>
-          <!-- DRAFT: edit the points below so they match this project exactly -->
-          <div class="project__cols">
-            <div>
-              <h4>The starting point</h4>
-              <ul class="list list--minus">
-                <li>A generic theme that looked like every other store</li>
-                <li>No clear story about ingredients or skin concerns</li>
-                <li>Product pages that left key buying questions unanswered</li>
-              </ul>
-            </div>
-            <div>
-              <h4>What I designed &amp; built</h4>
-              <ul class="list list--check">
-                <li>A calm, premium visual identity for a skincare audience</li>
-                <li>Shop-by-concern navigation so visitors find the right product fast</li>
-                <li>Product pages with routines, ingredients and how-to-use sections</li>
-                <li>Custom Shopify sections the brand can edit without code</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Results box hidden until you have real numbers: delete the word "hidden" to show it -->
-          <div class="results" hidden>
-            <h4>Outcome</h4>
-            <ul class="results__list">
-              <li>[Outcome: e.g. what this concept demonstrates, since it has no live sales data]</li>
-              <li>[Outcome: e.g. custom sections built, Lighthouse score achieved]</li>
+          <div class="project__body">
+            <h3 id="p-nv-title">Novie <span class="badge">Concept project</span></h3>
+            <p class="project__type">Skincare concept store, built on Shopify.</p>
+            <!-- DRAFT: edit to match this project -->
+            <ul class="list list--check">
+              <li>Shop-by-concern navigation so visitors find the right product fast</li>
+              <li>Product pages with routines, ingredients and how-to-use</li>
+              <li>Custom Shopify sections the brand can edit without code</li>
             </ul>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- ============================================================
-       4. SERVICES
+       SERVICES (bento grid)
        ============================================================ -->
   <section class="section services" id="services" aria-labelledby="services-title">
     <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">Services</p>
-        <h2 id="services-title">How I help your store sell more</h2>
+      <header class="section-head" data-reveal>
+        <h2 id="services-title" data-split>What I do for your store</h2>
         <p class="section-head__lead">Focused services for brands that already have great products and want a store that does them justice.</p>
       </header>
 
-      <div class="card-grid">
-        <article class="card service reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg></span>
-          <h3>Shopify Store Redesign</h3>
-          <p>A full redesign that makes your brand look as good as your products feel, built to guide visitors to checkout.</p>
-          <ul class="list list--check">
-            <li>A store that builds trust at first glance</li>
-            <li>Clear paths to your best-sellers</li>
-            <li>Designed mobile-first, where most of your buyers shop</li>
-          </ul>
+      <div class="bento">
+        <article class="tile tile--image" data-reveal data-spotlight>
+          <div class="tile__text">
+            <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-storefront"></use></svg></span>
+            <h3>Shopify Store Redesign</h3>
+            <p>A full redesign that makes your brand look as good as your products feel, built to guide visitors to checkout.</p>
+            <ul class="list list--check">
+              <li>Builds trust at first glance</li>
+              <li>Clear paths to your best-sellers</li>
+              <li>Designed mobile-first</li>
+            </ul>
+          </div>
+          <div class="tile__visual" aria-hidden="true">
+            <img src="images/jennyjoy-email-after.jpg" width="1440" height="351" loading="lazy" decoding="async" alt="">
+          </div>
         </article>
 
-        <article class="card service reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-trending"></use></svg></span>
-          <h3>Conversion-Focused UX &amp; Product Page Optimization</h3>
+        <article class="tile tile--dark" data-reveal data-spotlight>
+          <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-cursor-click"></use></svg></span>
+          <h3>Conversion-Focused UX &amp; Product Pages</h3>
           <p>Product pages that answer every buying question: ingredients, benefits, reviews, shipping.</p>
           <ul class="list list--check">
-            <li>More visitors clicking Add to Cart</li>
+            <li>More clicks on Add to Cart</li>
             <li>Fewer doubts before checkout</li>
-            <li>Smoother cart and checkout flow</li>
           </ul>
         </article>
 
-        <article class="card service reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"></use></svg></span>
+        <article class="tile tile--green" data-reveal data-spotlight>
+          <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard-text"></use></svg></span>
           <h3>Website CRO Audit</h3>
-          <p>A detailed review of what's costing your store sales, backed by my UXAuditor tool, with a prioritised list of fixes.</p>
+          <p>A detailed review of what's costing your store sales, backed by my UXAuditor tool, with a prioritised fix list.</p>
           <ul class="list list--check">
             <li>Know exactly what to fix first</li>
-            <li>Clear, plain-English recommendations</li>
-            <li>Useful even if you never hire me</li>
+            <li>Plain-English recommendations</li>
           </ul>
         </article>
 
-        <article class="card service reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
-          <h3>Custom Shopify Theme Sections &amp; Development</h3>
-          <p>Custom sections and features built in Liquid, so your store does what your theme couldn't.</p>
+        <article class="tile" data-reveal data-spotlight>
+          <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+          <h3>Custom Theme Sections</h3>
+          <p>Custom sections built in Liquid, so your store does what your theme couldn't. Editable by you, no code needed.</p>
           <ul class="list list--check">
-            <li>Sections you can edit yourself, no code needed</li>
             <li>Fast, clean, theme-friendly code</li>
-            <li>No extra apps slowing your store down</li>
+            <li>No extra apps slowing you down</li>
           </ul>
         </article>
 
-        <article class="card service reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-bag"></use></svg></span>
+        <article class="tile tile--grid" data-reveal data-spotlight>
+          <span class="tile__icon"><svg class="icon" aria-hidden="true"><use href="#i-rocket-launch"></use></svg></span>
           <h3>Store Setup for New Brands</h3>
           <p>Launching your first store? I'll set it up properly from day one, with a design that's truly yours.</p>
           <ul class="list list--check">
-            <li>Launch with a polished, trustworthy store</li>
-            <li>Products, collections and pages set up right</li>
-            <li>A short walkthrough so you can run it with confidence</li>
+            <li>Products and collections set up right</li>
+            <li>A walkthrough so you can run it yourself</li>
           </ul>
         </article>
       </div>
@@ -553,96 +433,99 @@
   </section>
 
   <!-- ============================================================
-       4b. MY AUDIT TOOL — UXAuditor
-       PLACEHOLDER: if UXAuditor has a public link, add it to the
-       "Try UXAuditor" button below (or delete that button).
+       MY AUDIT TOOL: UXAuditor
+       PLACEHOLDER: if UXAuditor gets a public link, add a "Try UXAuditor" button below.
        ============================================================ -->
   <section class="section tool" id="tool" aria-labelledby="tool-title">
-    <div class="container tool__inner">
-      <div class="tool__copy reveal">
+    <div class="container">
+      <header class="tool__head" data-reveal>
         <p class="eyebrow">My audit tool</p>
-        <h2 id="tool-title">Meet UXAuditor: audits based on evidence, not guesswork</h2>
-        <p class="section-head__lead">Every audit I do is backed by UXAuditor, my dedicated UX audit tool. It shows your store the way your customers see it, so we fix what actually matters first.</p>
-        <ul class="tool__features">
-          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-layout"></use></svg></span>
-            <div><h3>Every device</h3><p>Full-page views of your store on desktop, tablet and mobile.</p></div></li>
-          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-target"></use></svg></span>
-            <div><h3>Attention heatmap</h3><p>Predicts where visitors look first, and whether your buttons get noticed.</p></div></li>
-          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
-            <div><h3>Accessibility checks</h3><p>WCAG checks pinned to the exact spot on the page, so nothing is vague.</p></div></li>
-          <li><span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"></use></svg></span>
-            <div><h3>Prioritised fixes</h3><p>Load speed plus a ranked list of issues, so the biggest wins come first.</p></div></li>
-        </ul>
-        <div class="tool__actions">
-          <a class="btn btn--primary" href="#contact" data-service="Website CRO Audit">Audit my store</a>
-          <!-- <a class="btn btn--ghost" href="[UXAuditor link]" target="_blank" rel="noopener">Try UXAuditor</a> -->
-        </div>
-      </div>
-      <div class="tool__visual reveal">
-        <div class="mock-browser">
-          <div class="mock-browser__bar" aria-hidden="true">
-            <span></span><span></span><span></span>
-            <div class="mock-browser__url">UXAuditor</div>
-          </div>
-          <img src="images/uxauditor-report.jpg" width="1440" height="673" loading="lazy" decoding="async"
-               alt="UXAuditor report for a soap store homepage: an attention heatmap over the page, attention scores, and a numbered list of UX and accessibility issues">
-        </div>
-      </div>
+        <h2 id="tool-title" data-split>Meet UXAuditor. Audits built on evidence, not guesswork.</h2>
+        <p class="section-head__lead">Every audit I do is backed by UXAuditor, my dedicated UX audit tool. It shows your store the way your customers see it.</p>
+      </header>
+
+      <figure class="tool__shot" data-reveal="zoom">
+        <div class="shot__bar" aria-hidden="true"><span></span><span></span><span></span><em>UXAuditor</em></div>
+        <img src="images/uxauditor-report.jpg" width="1440" height="673" loading="lazy" decoding="async"
+             alt="UXAuditor report for a soap store homepage: an attention heatmap over the page, attention scores, and a numbered list of UX and accessibility issues">
+      </figure>
+
+      <ul class="tool__features">
+        <li data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-devices"></use></svg>
+          <h3>Every device</h3>
+          <p>Full-page views of your store on desktop, tablet and mobile.</p>
+        </li>
+        <li data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-fire"></use></svg>
+          <h3>Attention heatmap</h3>
+          <p>Predicts where visitors look first, and whether your buttons get noticed.</p>
+        </li>
+        <li data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg>
+          <h3>Accessibility checks</h3>
+          <p>WCAG checks pinned to the exact spot on the page, so nothing is vague.</p>
+        </li>
+        <li data-reveal>
+          <svg class="icon" aria-hidden="true"><use href="#i-list-numbers"></use></svg>
+          <h3>Prioritised fixes</h3>
+          <p>Load speed plus a ranked list of issues, so the biggest wins come first.</p>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============================================================
-       5. FREE CRO AUDIT BANNER
+       FREE AUDIT OFFER
        ============================================================ -->
-  <section class="audit-banner" aria-labelledby="audit-title">
+  <section class="offer" aria-labelledby="offer-title">
     <div class="container">
-      <div class="audit-banner__inner reveal">
-        <div>
-          <p class="eyebrow eyebrow--light">Free for a limited number of brands</p>
-          <h2 id="audit-title">Get a free mini audit of your store</h2>
+      <div class="offer__panel" data-reveal="scale">
+        <div class="offer__copy">
+          <h2 id="offer-title">Get a free mini audit of your store.</h2>
           <p>Send me your store link. I'll record a short walkthrough of the top things that may be costing you sales, and how to fix them. No obligation.</p>
         </div>
-        <a class="btn btn--light" href="#contact" data-service="Website CRO Audit">Claim my free audit
+        <a class="btn btn--light" href="#contact" data-service="Website CRO Audit">Get a free audit
           <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+        <svg class="offer__glyph" aria-hidden="true"><use href="#logo-shopify"></use></svg>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       6. PROCESS
+       PROCESS (line draws in as you scroll to it)
        ============================================================ -->
   <section class="section process" id="process" aria-labelledby="process-title">
     <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">Process</p>
-        <h2 id="process-title">A clear path from audit to launch</h2>
+      <header class="section-head" data-reveal>
+        <h2 id="process-title" data-split>From audit to launch in 2 to 4 weeks</h2>
         <p class="section-head__lead">You always know what's happening, what's next and what I need from you.</p>
       </header>
 
-      <ol class="timeline">
-        <li class="timeline__step reveal">
-          <span class="timeline__num" aria-hidden="true">01</span>
+      <ol class="timeline" data-timeline>
+        <li class="timeline__step" data-reveal>
+          <span class="timeline__node"><svg class="icon" aria-hidden="true"><use href="#i-magnifying-glass"></use></svg></span>
           <h3>Audit</h3>
           <p>I review your store, analytics and customer journey to find what's holding sales back.</p>
         </li>
-        <li class="timeline__step reveal">
-          <span class="timeline__num" aria-hidden="true">02</span>
-          <h3>Strategy &amp; Wireframes</h3>
+        <li class="timeline__step" data-reveal>
+          <span class="timeline__node"><svg class="icon" aria-hidden="true"><use href="#i-compass"></use></svg></span>
+          <h3>Strategy &amp; wireframes</h3>
           <p>We agree on priorities, and I map out page layouts before any visual design.</p>
         </li>
-        <li class="timeline__step reveal">
-          <span class="timeline__num" aria-hidden="true">03</span>
+        <li class="timeline__step" data-reveal>
+          <span class="timeline__node"><svg class="icon" aria-hidden="true"><use href="#i-pen-nib"></use></svg></span>
           <h3>Design</h3>
           <p>Polished designs in Figma for desktop and mobile, refined with your feedback.</p>
         </li>
-        <li class="timeline__step reveal">
-          <span class="timeline__num" aria-hidden="true">04</span>
-          <h3>Build &amp; Test</h3>
-          <p>I build it in Shopify and test it across devices, browsers and the full checkout flow.</p>
+        <li class="timeline__step" data-reveal>
+          <span class="timeline__node"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span>
+          <h3>Build &amp; test</h3>
+          <p>I build it in Shopify and test it across devices, browsers and the full checkout.</p>
         </li>
-        <li class="timeline__step reveal">
-          <span class="timeline__num" aria-hidden="true">05</span>
-          <h3>Launch &amp; Support</h3>
+        <li class="timeline__step" data-reveal>
+          <span class="timeline__node"><svg class="icon" aria-hidden="true"><use href="#i-rocket-launch"></use></svg></span>
+          <h3>Launch &amp; support</h3>
           <p>A smooth launch, a walkthrough of your new store, and support while you settle in.</p>
         </li>
       </ol>
@@ -650,135 +533,148 @@
   </section>
 
   <!-- ============================================================
-       7. WHY WORK WITH ME
+       WHY WORK WITH ME (sticky heading on desktop)
        ============================================================ -->
   <section class="section why" aria-labelledby="why-title">
-    <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">Why work with me</p>
-        <h2 id="why-title">Design that's measured by sales, not just looks</h2>
-      </header>
-
-      <div class="why-grid">
-        <div class="why-item reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-target"></use></svg></span>
-          <h3>Conversion first</h3>
-          <p>Every layout choice has a reason: helping the right visitor find the right product and buy it.</p>
-        </div>
-        <div class="why-item reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg></span>
-          <h3>I know your customers</h3>
-          <p>Skincare, soap and beauty buyers care about ingredients, trust and feel. I design for exactly that.</p>
-        </div>
-        <div class="why-item reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg></span>
-          <h3>Clear communication</h3>
-          <p>Regular updates in plain English. No jargon, no disappearing, no surprises.</p>
-        </div>
-        <div class="why-item reveal">
-          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span>
-          <h3>Fast turnaround</h3>
-          <p>A focused process and clear milestones mean your new store goes live sooner.</p>
-        </div>
+    <div class="container why__inner">
+      <div class="why__head">
+        <h2 id="why-title" data-split>Why brands hire me</h2>
+        <p class="section-head__lead" data-reveal>Design that's measured by sales, not just looks.</p>
       </div>
+      <ul class="why__list">
+        <li data-reveal>
+          <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#i-target"></use></svg></span>
+          <div><h3>Conversion first</h3><p>Every layout choice has a reason: helping the right visitor find the right product and buy it.</p></div>
+        </li>
+        <li data-reveal>
+          <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"></use></svg></span>
+          <div><h3>I know your customers</h3><p>Skincare, soap and beauty buyers care about ingredients, trust and feel. I design for exactly that.</p></div>
+        </li>
+        <li data-reveal>
+          <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat-circle-text"></use></svg></span>
+          <div><h3>Clear communication</h3><p>Regular updates in plain English. No jargon, no disappearing, no surprises.</p></div>
+        </li>
+        <li data-reveal>
+          <span class="why__icon"><svg class="icon" aria-hidden="true"><use href="#i-lightning"></use></svg></span>
+          <div><h3>Fast turnaround</h3><p>A focused process and clear milestones mean your new store goes live sooner.</p></div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- ============================================================
-       8. TESTIMONIALS — replace with real client words only
+       TESTIMONIALS: real client reviews from Upwork & Fiverr
+       (names and dates left out on purpose).
+       PROFILE PHOTOS: with each client's permission, add
+       images/client-1.jpg, client-2.jpg, client-3.jpg (200×200).
+       Until then, the platform avatar is shown.
        ============================================================ -->
-  <section class="section testimonials" aria-labelledby="testimonials-title">
+  <section class="section reviews" aria-labelledby="reviews-title">
     <div class="container">
-      <header class="section-head reveal">
-        <p class="eyebrow">Kind words</p>
-        <h2 id="testimonials-title">What clients say</h2>
-        <p class="section-head__lead">A 5.0★ rating from clients on Upwork and Fiverr. Here are a few of their reviews.</p>
+      <header class="reviews__head" data-reveal>
+        <p class="eyebrow">Client reviews</p>
+        <h2 id="reviews-title" data-split>Rated 5.0 on Upwork and Fiverr</h2>
       </header>
 
-      <!-- Real client reviews from Upwork & Fiverr (names and dates left out on purpose) -->
-      <div class="card-grid card-grid--3">
-        <figure class="card quote reveal">
-          <p class="stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
-          <blockquote><p>“Working with Hina comes with solutions. She doesn't just identify problems; she takes the time to understand them and finds practical, effective ways to solve them. She's reliable, detail-oriented, and always focused on delivering a better result. I feel very confident in asking her to do anything related to our Shopify store.”</p></blockquote>
-          <figcaption><strong>Shopify store owner, United States</strong><span>Review on Fiverr</span></figcaption>
+      <div class="reviews__grid">
+        <figure class="review review--featured" data-reveal>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg></div>
+          <blockquote><p>“She doesn't just identify problems; she takes the time to understand them and finds practical, effective ways to solve them.”</p></blockquote>
+          <figcaption>
+            <span class="avatar avatar--fiverr">
+              <img src="images/client-1.jpg" width="96" height="96" loading="lazy" decoding="async" alt="" data-avatar>
+              <svg class="icon" aria-hidden="true"><use href="#logo-fiverr"></use></svg>
+            </span>
+            <span><strong>Shopify store owner, United States</strong><span>Review on Fiverr</span></span>
+          </figcaption>
         </figure>
-        <figure class="card quote reveal">
-          <p class="stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
-          <blockquote><p>“Working with Hina has been an absolute pleasure, and I am truly grateful for the exceptional work she has done. Hina's ability to consistently overdeliver has left me in awe.”</p></blockquote>
-          <figcaption><strong>Website design client</strong><span>Review on Upwork</span></figcaption>
+
+        <figure class="review" data-reveal>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg></div>
+          <blockquote><p>“Hina's ability to consistently overdeliver has left me in awe.”</p></blockquote>
+          <figcaption>
+            <span class="avatar avatar--upwork">
+              <img src="images/client-2.jpg" width="96" height="96" loading="lazy" decoding="async" alt="" data-avatar>
+              <svg class="icon" aria-hidden="true"><use href="#logo-upwork"></use></svg>
+            </span>
+            <span><strong>Website design client</strong><span>Review on Upwork</span></span>
+          </figcaption>
         </figure>
-        <figure class="card quote reveal">
-          <p class="stars" role="img" aria-label="Rated 5 out of 5">★★★★★</p>
-          <blockquote><p>“What I appreciate most about her is that she takes her work seriously. You can tell fairly quickly when someone is only interested in finishing a job and getting paid, and when someone actually cares about whether the work is done properly.”</p></blockquote>
-          <figcaption><strong>Shopify store owner, United States</strong><span>Review on Fiverr</span></figcaption>
+
+        <figure class="review" data-reveal>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg><svg aria-hidden="true"><use href="#i-star"></use></svg></div>
+          <blockquote><p>“What I appreciate most about her is that she takes her work seriously.”</p></blockquote>
+          <figcaption>
+            <span class="avatar avatar--fiverr">
+              <img src="images/client-3.jpg" width="96" height="96" loading="lazy" decoding="async" alt="" data-avatar>
+              <svg class="icon" aria-hidden="true"><use href="#logo-fiverr"></use></svg>
+            </span>
+            <span><strong>Shopify store owner, United States</strong><span>Review on Fiverr</span></span>
+          </figcaption>
         </figure>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       9. ABOUT
+       ABOUT
        ============================================================ -->
   <section class="section about" id="about" aria-labelledby="about-title">
     <div class="container about__inner">
-      <div class="about__photo reveal">
-        <!-- Local: images/hina.jpg (portrait, 800×1000 recommended) -->
-        <img src="images/hina.jpg"
-             data-fallback="images/hina-placeholder.svg"
+      <div class="about__photo" data-reveal="clip">
+        <!-- Your photo: images/hina.jpg (portrait 4:5, e.g. 800×1000) -->
+        <img src="images/hina.jpg" data-fallback="images/hina-placeholder.svg"
              width="800" height="1000" loading="lazy" decoding="async"
              alt="Portrait of Hina Manzoor, Shopify store designer and developer">
       </div>
-      <div class="about__copy reveal">
-        <p class="eyebrow">About me</p>
-        <h2 id="about-title">Hi, I'm Hina.</h2>
-        <p>I help small product brands sell better on Shopify. I love working with brands made by real people: the soap makers, the skincare founders, the ones who care about every ingredient.</p>
-        <p>My job is to make sure your store shows that care, and makes it easy for the right customer to say yes. I handle design, UX and Shopify development, so you work with one person who understands the whole picture, from first click to checkout.</p>
+      <div class="about__copy">
+        <h2 id="about-title" data-split>Hi, I'm Hina.</h2>
+        <p data-reveal>I help small product brands sell better on Shopify. I love working with brands made by real people: the soap makers, the skincare founders, the ones who care about every ingredient.</p>
+        <p data-reveal>My job is to make sure your store shows that care, and makes it easy for the right customer to say yes. I handle design, UX and Shopify development, so you work with one person who understands the whole picture, from first click to checkout.</p>
 
-        <h3 class="about__tools-title">Tools I work with</h3>
-        <ul class="tags" aria-label="Tools">
-          <li>Shopify</li>
-          <li>Liquid</li>
-          <li>Figma</li>
-          <li>HTML / CSS / JS</li>
+        <h3 class="about__tools-title" data-reveal>Tools I work with</h3>
+        <ul class="tools" aria-label="Tools" data-reveal>
+          <li><svg class="icon" aria-hidden="true"><use href="#logo-shopify"></use></svg>Shopify</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>Liquid</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#logo-figma"></use></svg>Figma</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#logo-html5"></use></svg>HTML</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#logo-css"></use></svg>CSS</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#logo-javascript"></use></svg>JavaScript</li>
         </ul>
-        <a class="btn btn--primary" href="#contact">Let's talk about your store</a>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       10. FAQ — native <details>/<summary>: accessible by default
+       FAQ (native <details>/<summary>: accessible by default)
        ============================================================ -->
   <section class="section faq" aria-labelledby="faq-title">
-    <div class="container container--narrow">
-      <header class="section-head reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2 id="faq-title">Questions, answered</h2>
-      </header>
+    <div class="container faq__inner">
+      <h2 id="faq-title" data-split>Questions, answered</h2>
 
-      <div class="accordion reveal">
+      <div class="accordion" data-reveal>
         <details class="accordion__item">
-          <summary>How long does a redesign take?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
-          <div class="accordion__body"><p>Most full redesigns take 2–4 weeks, depending on the number of pages and custom features. You'll get a clear timeline before we start.</p></div>
+          <summary>How long does a redesign take?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
+          <div class="accordion__body"><p>Most full redesigns take 2 to 4 weeks, depending on the number of pages and custom features. You'll get a clear timeline before we start.</p></div>
         </details>
         <details class="accordion__item">
-          <summary>Do you work with US clients across time zones?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+          <summary>Do you work with US clients across time zones?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
           <div class="accordion__body"><p>Yes. I work with US brands and keep my schedule flexible. Most updates happen async, so nothing waits on time zones, and calls are booked at a time that suits you.</p></div>
         </details>
         <details class="accordion__item">
-          <summary>Do I need to be on Shopify already?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+          <summary>Do I need to be on Shopify already?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
           <div class="accordion__body"><p>No. I can redesign an existing Shopify store, or set up a new one for you. If you're moving from another platform, let's talk about your setup first.</p></div>
         </details>
         <details class="accordion__item">
-          <summary>What does the audit include?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+          <summary>What does the audit include?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
           <div class="accordion__body"><p>The free mini audit is a short recorded walkthrough of the top issues on your store. The full CRO audit covers your homepage, collections, product pages, cart and mobile experience, with a prioritised fix list. I use my own audit tool, UXAuditor, for heatmaps, accessibility and speed checks on desktop, tablet and mobile. The full audit is $100.</p></div>
         </details>
         <details class="accordion__item">
-          <summary>How do payments work?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+          <summary>How do payments work?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
           <div class="accordion__body"><p>Simple and fair: 50% upfront to book your project, and 50% at launch. Payment is by bank transfer. Every project starts with a clear written quote.</p></div>
         </details>
         <details class="accordion__item">
-          <summary>What do you need from me to start?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+          <summary>What do you need from me to start?<svg class="icon" aria-hidden="true"><use href="#i-caret-down"></use></svg></summary>
           <div class="accordion__body"><p>Your store link, collaborator access to Shopify, your logo and brand assets, and a short chat about your goals. I'll send a simple checklist so nothing is missed.</p></div>
         </details>
       </div>
@@ -786,30 +682,28 @@
   </section>
 
   <!-- ============================================================
-       11. CONTACT
-       CONTACT FORM — powered by FormSubmit (https://formsubmit.co)
+       CONTACT: powered by FormSubmit (https://formsubmit.co)
        No account needed. Messages go to the email in the action URL.
        The very first submission sends an "Activate Form" email to that
        inbox: click it once, then all messages arrive normally.
-       To change the receiving email, edit the action URL below.
        ============================================================ -->
   <section class="section contact" id="contact" aria-labelledby="contact-title">
     <div class="container contact__inner">
-      <div class="contact__intro reveal">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Let's make your store sell better</h2>
-        <p>Tell me a little about your store and what you'd like to improve. I reply within 24 hours.</p>
+      <div class="contact__intro">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h2 id="contact-title" data-split>Let's make your store sell better</h2>
+        <p data-reveal>Tell me a little about your store and what you'd like to improve. I reply within 24 hours.</p>
 
-        <ul class="contact-links">
-          <li><a href="mailto:hinamanzoor101@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg>hinamanzoor101@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/hinamanzoor/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg>LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/hina_hmofficial/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg>Instagram</a></li>
-          <li><a href="https://www.facebook.com/hinahmofficial" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"></use></svg>Facebook</a></li>
-          <li><a href="https://wa.me/923096849049" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>WhatsApp</a></li>
+        <ul class="contact-links" data-reveal>
+          <li><a href="mailto:hinamanzoor101@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-envelope-simple"></use></svg>hinamanzoor101@gmail.com</a></li>
+          <li><a href="https://wa.me/923096849049" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"></use></svg>WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/hinamanzoor/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin-logo"></use></svg>LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/hina_hmofficial/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"></use></svg>Instagram</a></li>
+          <li><a href="https://www.facebook.com/hinahmofficial" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook-logo"></use></svg>Facebook</a></li>
         </ul>
       </div>
 
-      <form class="contact-form card reveal" id="contact-form"
+      <form class="contact-form" id="contact-form" data-reveal
             action="https://formsubmit.co/hinamanzoor101@gmail.com" method="POST" novalidate>
         <!-- FormSubmit settings -->
         <input type="hidden" name="_subject" value="New enquiry from hinahm.pages.dev">
@@ -818,16 +712,17 @@
         <!-- Where visitors land if JavaScript is off -->
         <input type="hidden" name="_next" value="https://hinahm.pages.dev/#contact">
 
-        <div class="field">
-          <label for="f-name">Name</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
-          <p class="field__error" id="f-name-err" aria-live="polite"></p>
-        </div>
-
-        <div class="field">
-          <label for="f-email">Email</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err">
-          <p class="field__error" id="f-email-err" aria-live="polite"></p>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+            <p class="field__error" id="f-name-err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="f-email-err">
+            <p class="field__error" id="f-email-err" aria-live="polite"></p>
+          </div>
         </div>
 
         <div class="field">
@@ -839,7 +734,7 @@
         <div class="field">
           <label for="f-service">What do you need help with?</label>
           <select id="f-service" name="service" required aria-describedby="f-service-err">
-            <option value="">Choose a service…</option>
+            <option value="">Choose a service</option>
             <option>Shopify Store Redesign</option>
             <option>Conversion-Focused UX &amp; Product Page Optimization</option>
             <option>Website CRO Audit</option>
@@ -862,7 +757,7 @@
           <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
         </div>
 
-        <button class="btn btn--primary btn--block" type="submit">Send message</button>
+        <button class="btn btn--dark btn--block" type="submit">Send message</button>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -870,34 +765,40 @@
 </main>
 
 <!-- ============================================================
-     12. FOOTER
+     FOOTER
      ============================================================ -->
 <footer class="site-footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a class="wordmark wordmark--light" href="#top">Hina<span aria-hidden="true">.</span></a>
-      <p>Shopify store redesigns that turn visitors into buyers.</p>
-    </div>
-    <nav aria-label="Footer">
-      <ul class="footer__nav">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <div class="container">
+    <p class="footer__big" aria-hidden="true">Let's build a store that sells.</p>
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="wordmark wordmark--light" href="#top">
+          <span class="wordmark__mark" aria-hidden="true">H</span>
+          <span class="wordmark__text">Hina Manzoor</span>
+        </a>
+        <p>Shopify store redesigns that turn visitors into buyers.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer__nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__social" aria-label="Social links">
+        <li><a href="mailto:hinamanzoor101@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-envelope-simple"></use></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/hinamanzoor/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin-logo"></use></svg></a></li>
+        <li><a href="https://www.instagram.com/hina_hmofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"></use></svg></a></li>
+        <li><a href="https://www.facebook.com/hinahmofficial" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook-logo"></use></svg></a></li>
+        <li><a href="https://wa.me/923096849049" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"></use></svg></a></li>
       </ul>
-    </nav>
-    <ul class="footer__social" aria-label="Social links">
-      <li><a href="mailto:hinamanzoor101@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></a></li>
-      <li><a href="https://www.linkedin.com/in/hinamanzoor/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"></use></svg></a></li>
-      <li><a href="https://www.instagram.com/hina_hmofficial/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a></li>
-      <li><a href="https://www.facebook.com/hinahmofficial" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"></use></svg></a></li>
-      <li><a href="https://wa.me/923096849049" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg></a></li>
-    </ul>
-  </div>
-  <div class="container footer__bottom">
-    <p>&copy; <span id="year">2026</span> Hina Manzoor. All rights reserved.</p>
-    <a href="#top">Back to top ↑</a>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year">2026</span> Hina Manzoor. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
   </div>
 </footer>
 

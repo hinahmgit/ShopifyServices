@@ -1,13 +1,13 @@
 /* ==========================================================================
-   Hina — Portfolio scripts (vanilla JS, no libraries)
+   Hina Manzoor | Portfolio scripts (vanilla JS, no libraries)
    --------------------------------------------------------------------------
-   1. Image fallbacks (show placeholders until real screenshots are added)
+   1. Image fallbacks (placeholders until real screenshots are added)
    2. Sticky header + mobile menu
    3. Active nav link while scrolling
-   4. Scroll-reveal animations
+   4. Scroll reveals: fade/slide, word-by-word headlines, timeline line
    5. Before / After comparison sliders
-   6. Desktop / Mobile view tabs
-   7. "Book a Free Audit" buttons pre-select the service
+   6. Effects: hero pointer parallax, card spotlight
+   7. "Get a free audit" buttons pre-select the service
    8. Contact form (validation + FormSubmit)
    9. Footer year
    ========================================================================== */
@@ -36,17 +36,28 @@
     }
   });
 
+  // Review profile photos: if images/client-N.jpg is missing, remove the <img>
+  // so the platform avatar underneath shows instead.
+  document.querySelectorAll('img[data-avatar]').forEach(function (img) {
+    if (img.complete && img.naturalWidth === 0) img.remove();
+    else img.addEventListener('error', function () { img.remove(); }, { once: true });
+  });
+
+  var canObserve = 'IntersectionObserver' in window;
+
   /* 2. STICKY HEADER + MOBILE MENU ======================================= */
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
   var toggleLabel = toggle.querySelector('.sr-only');
 
-  function onScroll() {
-    header.classList.toggle('is-scrolled', window.scrollY > 8);
+  // Solid header once the page has scrolled (watches a tiny sentinel at the top)
+  var sentinel = document.querySelector('.header-sentinel');
+  if (canObserve && sentinel) {
+    new IntersectionObserver(function (entries) {
+      header.classList.toggle('is-scrolled', !entries[0].isIntersecting);
+    }).observe(sentinel);
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
 
   function setMenu(open) {
     toggle.setAttribute('aria-expanded', String(open));
@@ -97,27 +108,61 @@
     });
   }
 
-  /* 4. SCROLL-REVEAL ANIMATIONS ========================================== */
-  var reveals = document.querySelectorAll('.reveal');
-  if (reduceMotion || !('IntersectionObserver' in window)) {
-    reveals.forEach(function (el) { el.classList.add('is-visible'); });
-  } else {
-    var revealObserver = new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
+  /* 4. SCROLL REVEALS ===================================================
+     [data-reveal]          fades and slides in (variants: scale, zoom, clip)
+     [data-split]           headline words rise one by one
+     [data-timeline]        the process line draws across                  */
+
+  // Wrap every word of a [data-split] headline in <span class="w"><span>..</span></span>
+  function splitWords(el) {
+    var i = 0;
+    (function walk(node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (child) {
+        if (child.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            var outer = document.createElement('span');
+            var inner = document.createElement('span');
+            outer.className = 'w';
+            inner.style.setProperty('--i', i++);
+            inner.textContent = part;
+            outer.appendChild(inner);
+            frag.appendChild(outer);
+          });
+          child.replaceWith(frag);
+        } else if (child.nodeType === 1) {
+          walk(child);
         }
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    })(el);
+  }
 
-    reveals.forEach(function (el) {
-      // Small stagger for items that sit side by side in a grid
-      var siblings = el.parentElement ? el.parentElement.querySelectorAll(':scope > .reveal') : [];
-      var index = Array.prototype.indexOf.call(siblings, el);
-      if (index > 0) el.style.transitionDelay = Math.min(index, 5) * 80 + 'ms';
-      revealObserver.observe(el);
+  var reveals = document.querySelectorAll('[data-reveal], [data-split], [data-timeline]');
+  if (reduceMotion || !canObserve) {
+    reveals.forEach(function (el) { el.classList.add('is-in', 'is-drawn'); });
+  } else {
+    document.querySelectorAll('[data-split]').forEach(splitWords);
+
+    // Stagger items that sit side by side (siblings that both reveal)
+    document.querySelectorAll('[data-reveal]').forEach(function (el) {
+      var siblings = Array.prototype.filter.call(el.parentElement.children, function (c) {
+        return c.hasAttribute('data-reveal');
+      });
+      var index = siblings.indexOf(el);
+      if (index > 0) el.style.setProperty('--delay', Math.min(index, 6) * 90 + 'ms');
     });
+
+    var revealObserver = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add(entry.target.hasAttribute('data-timeline') ? 'is-drawn' : 'is-in');
+        obs.unobserve(entry.target);
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+
+    reveals.forEach(function (el) { revealObserver.observe(el); });
   }
 
   /* 5. BEFORE / AFTER COMPARISON SLIDERS =================================
@@ -178,35 +223,59 @@
     });
 
     set(pos);
+
+    // The first time a slider scrolls into view, nudge the handle so people see it moves
+    if (!reduceMotion && canObserve) {
+      new IntersectionObserver(function (entries, obs) {
+        if (!entries[0].isIntersecting) return;
+        obs.disconnect();
+        setTimeout(function () {
+          if (dragging) return;
+          root.classList.add('is-hinting');
+          set(32);
+          setTimeout(function () { if (!dragging) set(50); }, 750);
+          setTimeout(function () { root.classList.remove('is-hinting'); }, 1700);
+        }, 500);
+      }, { threshold: 0.6 }).observe(root);
+    }
   }
   document.querySelectorAll('[data-ba]').forEach(initSlider);
 
-  /* 6. DESKTOP / MOBILE VIEW TABS ======================================== */
-  document.querySelectorAll('.view-toggle').forEach(function (tablist) {
-    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+  /* 6. EFFECTS ==========================================================
+     Only on devices with a precise pointer (mouse/trackpad), never with
+     reduced motion. Values are written to CSS variables; CSS does the rest. */
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-    function select(tab, moveFocus) {
-      tabs.forEach(function (t) {
-        var selected = t === tab;
-        t.setAttribute('aria-selected', String(selected));
-        t.tabIndex = selected ? 0 : -1;
-        document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
+  if (finePointer && !reduceMotion) {
+    // Hero: layered screenshots tilt gently toward the cursor
+    var stage = document.querySelector('[data-tilt]');
+    var hero = document.querySelector('.hero');
+    if (stage && hero) {
+      var frame = null;
+      hero.addEventListener('pointermove', function (e) {
+        if (frame) return;
+        frame = requestAnimationFrame(function () {
+          var r = hero.getBoundingClientRect();
+          stage.style.setProperty('--px', ((e.clientX - r.left) / r.width - 0.5).toFixed(3));
+          stage.style.setProperty('--py', ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
+          frame = null;
+        });
       });
-      if (moveFocus) tab.focus();
+      hero.addEventListener('pointerleave', function () {
+        stage.style.setProperty('--px', 0);
+        stage.style.setProperty('--py', 0);
+      });
     }
 
-    tabs.forEach(function (tab, i) {
-      tab.addEventListener('click', function () { select(tab, false); });
-      tab.addEventListener('keydown', function (e) {
-        var next;
-        if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
-        else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
-        else if (e.key === 'Home') next = tabs[0];
-        else if (e.key === 'End') next = tabs[tabs.length - 1];
-        if (next) { e.preventDefault(); select(next, true); }
+    // Service tiles: a soft light follows the cursor
+    document.querySelectorAll('[data-spotlight]').forEach(function (tile) {
+      tile.addEventListener('pointermove', function (e) {
+        var r = tile.getBoundingClientRect();
+        tile.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        tile.style.setProperty('--my', (e.clientY - r.top) + 'px');
       });
     });
-  });
+  }
 
   /* 7. AUDIT BUTTONS PRE-SELECT THE SERVICE ============================== */
   var serviceSelect = document.getElementById('f-service');
